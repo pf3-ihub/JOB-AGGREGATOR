@@ -451,19 +451,7 @@ def experience_to_range(years):
 def load_and_clean_data(file_path):
     """Load and clean the dataset"""
     try:
-        st.write(f"Attempting to load file: {file_path}")
-        
-        # Try with explicit encoding
-        df = pd.read_csv(file_path, encoding='utf-8')
-        
-        # Debug info right after loading
-        st.write("CSV loaded successfully")
-        st.write(f"Data Shape: {df.shape}")
-        st.write(f"Column Names: {df.columns.tolist()}")
-        st.write(f"First few rows:")
-        st.write(df.head(2))
-        st.write(f"Missing values by column: {df.isna().sum()}")
-        # df = pd.read_csv(file_path)
+        df = pd.read_csv(file_path)
         
         # Check if required columns exist, create them if not
         required_columns = [
