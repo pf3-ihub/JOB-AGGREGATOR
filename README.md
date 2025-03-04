@@ -1,7 +1,5 @@
 # Job Market Analysis Dashboard
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Job+Market+Analysis+Dashboard)
-
 ## Overview
 
 This interactive Streamlit dashboard analyzes job posting data to provide comprehensive insights into job market trends, required skills, qualifications, and compensation. It helps recruiters, job seekers, and HR professionals understand the current job market landscape through data visualization and detailed analysis.
@@ -96,13 +94,6 @@ The dashboard is organized into six main tabs:
 4. **Company Comparison**: Compare job offerings across companies
 5. **Compensation & Benefits**: Analyze salary ranges and benefits
 6. **Job Details**: Search and explore detailed job listings
-
-## Customization
-
-You can customize the dashboard by:
-- Modifying color themes in the settings panel
-- Adjusting the number of items shown in rankings
-- Toggling data table visibility
 
 ## Troubleshooting
 

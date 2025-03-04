@@ -2109,22 +2109,6 @@ def main():
     
     st.sidebar.markdown("---")
     
-    # Add configuration options in sidebar
-    with st.sidebar.expander("Dashboard Settings", expanded=False):
-        # Chart color theme selection
-        color_theme = st.selectbox(
-            "Chart Color Theme",
-            ["Viridis", "Plasma", "Blues", "Greens", "Oranges", "Reds", "Purples", "Teal"],
-            index=0,
-            key="color_theme"
-        )
-        
-        # Toggle for showing data tables
-        show_tables = st.checkbox("Show Data Tables", value=True, key="show_tables")
-        
-        # Number of items to show in rankings
-        top_n_items = st.slider("Items in Rankings", min_value=5, max_value=25, value=10, key="top_n_items")
-    
     if uploaded_files:
         # Process all uploaded files
         all_data_frames = []
