@@ -510,7 +510,8 @@ def load_and_clean_data(file_path):
         )
         
         # Convert Date Posted to datetime
-        df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
+        # df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
+        df["Date Posted"] = pd.to_datetime(df["Date Posted"], format="%Y-%m-%d", errors='coerce')
         
         # Set current date for rows with missing date
         current_date = datetime.now()
