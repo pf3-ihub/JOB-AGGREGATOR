@@ -395,10 +395,8 @@ def extract_work_mode(text):
         return "Remote"
     elif any(term in text for term in ["hybrid", "flexible work", "partially remote", "remote flexible", "flexible remote", "office flexible"]):
         return "Hybrid"
-    elif any(term in text for term in ["onsite", "in office", "in-office", "on location", "on-site", "workplace", "accommodation", "on site", "in person"]):
-        return "Onsite"
     else:
-        return "Not Specified"
+        return "Onsite"
 
 def extract_job_benefits(text):
     """Extract common job benefits mentioned in the posting"""
@@ -510,8 +508,7 @@ def load_and_clean_data(file_path):
         )
         
         # Convert Date Posted to datetime
-        # df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
-        df["Date Posted"] = pd.to_datetime(df["Date Posted"], format="%Y-%m-%d", errors='coerce')
+        df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
         
         # Set current date for rows with missing date
         current_date = datetime.now()
@@ -531,9 +528,12 @@ def load_and_clean_data(file_path):
         
         # Extract years of experience required
         df['Experience_Required'] = df.apply(
-            lambda row: extract_experience_requirement(str(row['Description', 'Minimum Qualifications', 'Preferred Qualifications', 'Responsibilities'])), 
+            lambda row: extract_experience_requirement(str(row['Description']) + " " + 
+                                               str(row['Responsibilities']) + " " + 
+                                               str(row['Minimum Qualifications']) + " " + 
+                                               str(row['Preferred Qualifications'])), 
             axis=1
-        )
+            )
         
         # Group experience into ranges for easier analysis
         df['Experience_Range'] = df['Experience_Required'].apply(lambda x: experience_to_range(x))
@@ -541,7 +541,7 @@ def load_and_clean_data(file_path):
         # Extract education requirements
         df['Education_Required'] = df.apply(
             lambda row: extract_education_requirements(
-                str(row['Minimum Qualifications']) + " " + str(row['Preferred Qualifications'])
+                str(row['Minimum Qualifications']) + " " + str(row['Preferred Qualifications']) + " " + str(row['Description']) + " " + str(row['Responsibilities'])
             ),
             axis=1
         )
@@ -2085,9 +2085,9 @@ def load_and_clean_data_from_df(df):
     
     # Extract years of experience required
     df['Experience_Required'] = df.apply(
-        lambda row: extract_experience_requirement(str(row['Minimum Qualifications'])), 
-        axis=1
-    )
+            lambda row: extract_experience_requirement(str(row['Description']) + " " + str(row['Responsibilities']) + " " + str(row['Minimum Qualifications']) + " " + str(row['Preferred Qualifications'])), 
+            axis=1
+        )
     
     # Group experience into ranges for easier analysis
     df['Experience_Range'] = df['Experience_Required'].apply(lambda x: experience_to_range(x))
@@ -2095,7 +2095,7 @@ def load_and_clean_data_from_df(df):
     # Extract education requirements
     df['Education_Required'] = df.apply(
         lambda row: extract_education_requirements(
-            str(row['Minimum Qualifications']) + " " + str(row['Preferred Qualifications'])
+            str(row['Minimum Qualifications']) + " " + str(row['Preferred Qualifications']) + " " + str(row['Description']) + " " + str(row['Responsibilities'])
         ),
         axis=1
     )
