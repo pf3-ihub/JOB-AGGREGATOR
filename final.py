@@ -530,7 +530,7 @@ def load_and_clean_data(file_path):
         
         # Extract years of experience required
         df['Experience_Required'] = df.apply(
-            lambda row: extract_experience_requirement(str(row['Minimum Qualifications'])), 
+            lambda row: extract_experience_requirement(str(row['Minimum Qualifications', 'Preferred Qualifications', 'Responsibilities'])), 
             axis=1
         )
         
