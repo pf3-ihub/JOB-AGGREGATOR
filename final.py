@@ -444,6 +444,67 @@ def experience_to_range(years):
         return "Senior (5-8 years)"
     else:
         return "Expert (8+ years)"
+    
+def convert_excel_date(date_val):
+    """
+    Convert various date formats to datetime objects, with special handling for Excel date serials.
+    
+    Excel dates are stored as days since January 1, 1900 (with a quirk that 1900 is incorrectly 
+    treated as a leap year). This function handles Excel dates as well as other common formats.
+    """
+    import pandas as pd
+    from datetime import datetime, timedelta
+    import re
+    
+    if pd.isna(date_val):
+        return None
+    
+    # Handle integer or float values
+    if isinstance(date_val, (int, float)):
+        # Excel date serial number (days since 1900-01-01, with some quirks)
+        if 30000 < date_val < 50000:  # Range for recent dates in Excel format
+            # Convert Excel serial date to datetime
+            # Excel's day 0 is December 30, 1899 (Excel incorrectly treats 1900 as a leap year)
+            excel_epoch = pd.Timestamp('1899-12-30')  # Excel's day 0
+            return excel_epoch + pd.Timedelta(days=int(date_val))
+        
+        # Handle unix timestamps (unlikely in this case but included for completeness)
+        elif date_val > 10000000000:  # Likely milliseconds
+            return pd.to_datetime(date_val, unit='ms')
+        else:  # Likely seconds
+            try:
+                return pd.to_datetime(date_val, unit='s')
+            except:
+                return None
+    
+    # Handle string dates
+    if isinstance(date_val, str):
+        date_val = date_val.strip()
+        
+        # Try common date formats
+        date_formats = [
+            "%Y-%m-%d",              # 2023-01-15
+            "%d-%m-%Y",              # 15-01-2023
+            "%m-%d-%Y",              # 01-15-2023
+            "%Y/%m/%d",              # 2023/01/15
+            "%d/%m/%Y",              # 15/01/2023
+            "%m/%d/%Y",              # 01/15/2023
+            "%B %d, %Y",             # January 15, 2023
+            "%b %d, %Y",             # Jan 15, 2023
+            "%d %B %Y",              # 15 January 2023
+            "%d %b %Y",              # 15 Jan 2023
+            "%Y-%m-%dT%H:%M:%S",     # ISO format
+            "%Y-%m-%d %H:%M:%S"      # MySQL datetime format
+        ]
+        
+        for date_format in date_formats:
+            try:
+                return datetime.strptime(date_val, date_format)
+            except ValueError:
+                continue
+    
+    # If all parsing attempts fail, return None
+    return None
 
 @handle_exceptions
 def load_and_clean_data(file_path):
@@ -508,8 +569,9 @@ def load_and_clean_data(file_path):
         )
         
         # Convert Date Posted to datetime
-        df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
-        
+        # Convert Date Posted to datetime using our flexible converter
+        df['Date Posted'] = df['Date Posted'].apply(convert_excel_date)
+
         # Set current date for rows with missing date
         current_date = datetime.now()
         df['Date Posted'] = df['Date Posted'].fillna(current_date)
@@ -2065,9 +2127,9 @@ def load_and_clean_data_from_df(df):
     )
     
     # Convert Date Posted to datetime
-    df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
-    
-    # Set current date for rows with missing date
+    df['Date Posted'] = df['Date Posted'].apply(convert_excel_date)
+
+        # Set current date for rows with missing date
     current_date = datetime.now()
     df['Date Posted'] = df['Date Posted'].fillna(current_date)
     
