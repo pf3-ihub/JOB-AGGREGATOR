@@ -1,0 +1,987 @@
+Job Title,Location,Date Posted,Job Description,Responsibilities,Minimum Qualifications,Preferred Qualifications,Apply Link
+"Production Systems Engineer, Foundation Labs","Bangalore, IND",Posted 3 days ago,Summary:,"Set up pre-production hardware for testing
+Perform tests on server hardware systems and modules
+Perform issue duplication and isolation
+Support system debug work
+Maintaining test servers and modules with latest OS, firmware, software
+Assist with validation and verification of new hardware platforms
+Create documentation and training materials, and ensure they remain up to date
+Clone and deploy OS images onto clients
+Read and analyze failure logs, providing a quick summary to Test / FW developers
+Track and manage test resources including rack, system, module, and bench
+Monitor test runs and recover “unresponsive” clients
+Test development, automation and failure analysis
+BS in Electrical Engineering or Computer Engineering, or related Engineering Degree, with 3+ years of industry experience in data center equipment testing.
+Experienced working in Linux Systems Environments
+Experience with server hardware testing
+Skill to gather, process, and summarize test data and results
+Experience with setting up test beds for SI testing (High BW Scopes and BERT Scopes)
+Experience with system function, stability, and power consumption testing
+Experience with stress test tool with CPU, memory, storage, and I/O subsystem
+Experience with server BMC
+Successful candidates must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location
+Experience and understanding of using PCIe test fixtures
+Experience with test automation scripting in Python
+Skill to gather data with scripts",N/A,N/A,https://rr.jobsyn.org/0E82D8072CEC433B9AB1F96AEE7471E510
+"ASIC Engineer, Accelerator Systems","Bangalore, IND",Posted 4 days ago,Summary:,"Design, develop, and maintain Linux device drivers/kernel modules, user-space drivers, user-space libraries and APIs, system services and daemons to support the ASIC
+Develop diagnostics tools to troubleshoot and debug issues with the ASIC and related software components
+Optimize and benchmark the performance of the ASIC and related software components
+Collaborate with hardware engineers to understand the ASIC architecture and design
+Collaborate with software engineers to integrate the ASIC into the overall software stack
+Participate in code reviews and contribute to the development of best practices
+Stay up-to-date with the latest developments in Linux kernel development and related technologies
+BS/MS in Computer Science or a related field
+3+ years of experience in Linux systems development
+Expert-level knowledge of C and C++ programming languages
+Experience of developing diagnostic/telemetry tools
+Experience with Linux kernel internals, device drivers, and kernel modules
+Experience with user-space driver development and API design
+Knowledge of computer architecture and hardware design principles
+Demonstrated problem-solving skills and experience of work independently
+Experience with performance optimization and benchmarking
+Strong communication skills
+Experience with AI accelerator ASICs
+Experience with continuous integration and continuous deployment (CI/CD) pipelines
+Experience with performance optimization and benchmarking
+Experience of developing Reliability, Availability, and Serviceability features for a product",N/A,N/A,https://rr.jobsyn.org/F69067E99EB94EDDA1408C15005E3BC810
+Solutions Architect,"Bangalore, IND",Posted 4 days ago,Summary:,"Act as a technical consultant on Meta's messaging enterprise and marketing technology solutions for some of the most largest companies in the world
+Guide our clients to the most optimal implementations by illustrating technical details of Meta's platform and products
+Work closely with sales teams to unlock and develop new opportunities by developing an understanding on business goals and industry trends
+Impact the industry through technology by participating in industry conferences and presenting to executive-level audience
+Travel Requirement: 20%
+Combined experience as an Engineer, Solutions Architect, Technical Consultant, or Partner/Sales Engineer
+Experience working with software systems including querying, SQL scripting, and working with APIs
+Experience collaborating with technical and business audience at prospects or clients
+Experience with web, mobile, or messaging enterprise technology stack
+Experience demonstrating knowledge of industry technology areas and trends
+Technical Degree (Science, Technology, Engineering, Mathematics) or equivalent industry experience
+Experience deploying large partner integration projects
+Technical understanding of the Meta Platform",N/A,N/A,https://rr.jobsyn.org/51FDFD35F1FA44E5BBB944B4F5EA57D610
+"ASIC Engineer, SoC Architect (AI Accelerators)","Bangalore, IND",Posted 4 days ago,Summary:,"Work on modeling, performance analysis and architecture definition of Machine Learning ASICs.
+Map Data Center workloads to heterogeneous ASICs that contain multiple different programmable processors and hardware accelerators. Perform detailed calculations to specify computation throughput, memory bandwidth and latency, evaluate performance v/s area v/s power tradeoffs.
+Identify appropriate workloads and micro-benchmarks to be used for performance analysis and drive this analysis on simulation and emulation platforms to define and validate the architecture.
+Evangelize your architectural solutions with your peers and leadership, while mentoring members of the architecture team.
+Collaborate with cross functional teams working on RTL design, Design Verification, Firmware/Software development, Pre-Post silicon validation and Program Management to deliver first pass functional silicon on an aspirational schedule.
+Collaborate with software and firmware teams to ensure that the ASIC meets end to end application performance goals while maintaining ease and efficiency of software development.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+12+ years of prior experience in defining and delivering multiple high performance ASICs into production, with focus on architecture definition and performance analysis.
+Experience and knowledge of Computer Architecture concepts such as microprocessor architecture, memory systems, on-chip interconnection networks, hardware/software partitioning etc.
+Experience working on AI high-performance kernels including CUDA programming or AI accelerator kernel programming.
+Programming in C or C++ with knowledge of mapping hardware algorithms to efficient C/C++ code.
+Master's or PhD degree in Electrical Engineering, Computer Engineering or related field.
+Domain knowledge in one or more of power/performance tradeoffs, digital signal processing, ML networks, ML frameworks such as Pytorch.
+Knowledge of GPU or AI accelerator architectures.",N/A,N/A,https://rr.jobsyn.org/D23319D7F47A4C5B9928C1D47F37400B10
+ASIC Design Engineer,"Bangalore, IND",Posted 6 days ago,Summary:,"Micro-architecture development.
+RTL development using Verilog, System Verilog and HLS.
+Lint, CDC, Synthesis, & Power Optimization.
+Soft and hard IP identification, selection and integration.
+Collaboration with verification and emulation teams in test plan development and debug.
+Collaboration with implementation team to close the design on timing and power.
+3+ years of silicon development experience.
+Experience with Verilog or System Verilog.
+Experience etiher Micro-architecture or RTL development for complex control or data path IPs, or Experience in SoC Micro-architecture, Design and Integration, or Implementation, Power methodology development.
+Currently has, or is in the process of obtaining a Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience. Degree must be completed prior to joining Meta.
+Experience in data path development.
+Experience with Synthesis and Timing Closure.",N/A,N/A,https://rr.jobsyn.org/2013904B5A5043F780A80273FA442F2110
+Solutions Architect,"Gurgaon, IND",Posted 9 days ago,Summary:,"Act as a technical consultant on Meta's messaging enterprise and marketing technology solutions for some of the most largest companies in the world
+Guide our clients to the most optimal implementations by illustrating technical details of Meta's platform and products
+Work closely with sales teams to unlock and develop new opportunities by developing an understanding on business goals and industry trends
+Impact the industry through technology by participating in industry conferences and presenting to executive-level audience
+Travel Requirement: 20%
+Combined experience as an Engineer, Solutions Architect, Technical Consultant, or Partner/Sales Engineer
+Experience working with software systems including querying, SQL scripting, and working with APIs
+Experience collaborating with technical and business audience at prospects or clients
+Experience with web, mobile, or messaging enterprise technology stack
+Experience demonstrating knowledge of industry technology areas and trends
+Technical Degree (Science, Technology, Engineering, Mathematics) or equivalent industry experience
+Experience deploying large partner integration projects
+Technical understanding of the Meta Platform",N/A,N/A,https://rr.jobsyn.org/970879AFEFDA440988F760BB214C432710
+Network Implementation Engineer,"Mumbai, IND",Posted 17 days ago,Summary:,"Build and manage a portfolio of fiber infrastructure suppliers to ensure transparency with project management and information flow
+Manage fiber acceptance testing and validation for performance characteristics
+Collaborate with cross-functional teams to manage metric-driven supplier quarterly business reviews to evaluate in-life performance and opportunities for improvement
+Report on key metrics for infrastructure projects: On-time performance, Vendor performance, Monthly and yearly activated services and financial performance
+Collaborate with Network Development Managers and ensure key technical requirements are included during the pre-contract forming phase
+Keep abreast of technological developments in the telecom wholesale market and position Meta in the right place.
+Collaborate across cross-functional teams to synchronize fiber deployment schedule with fiber acceptance
+Work with data located in different systems, correlate data and build datasets to be used across different tools/systems
+Identify internal system workflow improvements to define the requirements for development improvements
+Travel up to 25% of the time
+BA, BSc, BEng or equivalent in technical or related field with at least 5 years of relevant experience in network deployment fiber projects
+Experience in terrestrial fiber network design and technology
+Certification or a proven track record in project management techniques and tools (e.g. Project Management Professional)
+Demonstrated understanding of fiber specs, interpretation of Optical Time-Domain Reflectometry (OTDR) traces, and fiber handover packages
+Experience engaging vendors on aspects of network design, planning and construction, particularly in India
+Experience in relationship building and collaboration within a cross-functional team
+Familiarity working with data in different tools and capacity to structure/clean data and create correlations
+Capacity and willingness to travel up to 25% of the time
+Experience in using scripts (Python, SQL), networking related software, frameworks, and APIs
+Experience with long haul and metro networks
+Demonstrates proven track record of major deal delivery (at multiple fiber pair scale) and familiarity with permitting and regulatory environment across the APAC region
+Understanding of subsea systems and associated fiber technologies
+Communicate in 1 or more regional business languages as the role requires communication with partners in local languages",N/A,N/A,https://rr.jobsyn.org/4BE997D400024429AA5CF1430123D50C10
+"ASIC Engineer, Design","Bangalore, IND",Posted 23 days ago,Summary:,"Participate in Micro-architecture, Design, and Verification reviews and provide feedback.
+Design and develop RTL or HLS code for some of the IPs.
+Analyze designs and enhance PPA (Power, Performance, Area).
+Support and develop Verification Infrastructure, analyze and improve Verification Coverage.
+Support Simulation accelerators and post-Silicon validation.
+Currently has, or is in the process of obtaining a Bachelor's degree in Computer Science, Computer Engineering, Electronics Engineering, relevant technical field, or equivalent practical experience. Degree must be completed prior to joining Meta.
+Exposure to Micro-architecture development.
+Exposure to RTL development using Verilog, System Verilog or HLS.
+Knowledge of Computer Architecture and Logic Design fundamentals.
+Must obtain work authorization in the country of employment at the time of hire and maintain ongoing work authorization during employment.
+Currently has, or is in the process of obtaining, a Masters degree in Electrical Engineering, Computer Engineering or related engineering fields.
+Experience in data path development.
+Experience in HLS.
+Experience with Lint, CDC, Synthesis, & Power Optimization.
+Experience with High Performance Computing.
+Scripting capability with Python or Perl.",N/A,N/A,https://rr.jobsyn.org/795E666104EB4AA8B3F70CDAD4C53DD010
+"ASIC Engineer, Design Verification","Bangalore, IND",Posted 23 days ago,Summary:,"Develop functional tests based on verification test plan.
+Drive Design Verification to closure based on defined verification metrics on test plan, functional and code coverage.
+Debug, root-cause and resolve functional failures in the design, partnering with the design/arch team.
+Collaborate with cross-functional teams like Design, Model, Emulation and Silicon validation teams towards ensuring the highest design quality.
+Currently has, or is in the process of obtaining a Bachelor's degree in Electronics Engineering, Computer Engineering, Computer Science, VLSI, relevant technical field, or equivalent practical experience. Degree must be completed prior to joining Meta.
+Experience using constrained-random, coverage driven verification or C/C++ verification.
+Experience in verifying a IP block using standard DV based techniques.
+Experience in EDA tools and scripting (Python, TCL, Perl, Shell) used to build tools and flows for verification environments.
+Understanding in at least one of the following areas: computer architecture, CPU, GPU, networking, interconnects, fabrics or similar designs.
+Currently has, or is in the process of obtaining, a Master’s degree in Electronics Engineering, Computer Engineering, Computer Science or similar technical field.
+Experience in development of SystemVerilog/UVM based verification environments from scratch.
+Experience debugging fails to the line of RTL, closing out bug fixes, using Verdi or equivalent debug tools.
+Experience in verification of any peripheral IPs like UART, SPI, I2C and exposure to protocols like APB, AXI
+Experience working in a CPU/GPU environment.
+Experience with revision control systems like Mercurial(Hg), Git or SVN.",N/A,N/A,https://rr.jobsyn.org/860CAA9F57C74C8F9EB80A12FF348A0110
+"ASIC Engineer, Front-End Implementation","Bangalore, IND",Posted 25 days ago,Summary:,"Run Logic/Physical Synthesis using advanced optimization techniques and generate optimized Gate Level Netlist for Timing, Area, Power.
+Debug the timing/area/congestion issues and work with RTL & Physical designers to resolve them.
+Perform Power Estimation at RTL and Gate Level and identify power reduction opportunities.
+Run Formal Verification checks between RTL and Gate level netlist and debug the aborts, inconclusive and Logic Equivalency failures.
+Perform RTL Lint and work with the Designers to create waivers.
+Perform RTL DFT Analysis and improve the DFT coverage for Stuck-at faults.
+Develop Timing Constraints for RTL-Synthesis and PrimeTime-STA for the blocks and the top-level including SOC. Analyze the inter-block timing and come up with IO budgets for the various partition blocks.
+Developing Automation scripts and Methodology for all FE-tools including (Lint, CDC, RDC, Synthesis, STA, Power).
+Work closely with the Design Engineers, DV Engineers, Emulation Engineers in supporting them with the handoff tasks. Interact with Physical Design Engineers and provide them with timing/congestion feedback.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience as a Front End Synthesis & Integration Engineer
+Experience with RTL Synthesis and design optimization for Power, Performance, Area.
+Knowledge of front-end and back-end ASIC tools.
+Experience with RTL design using SystemVerilog or other HDL.
+Experience managing multiple design releases and working with cross functional teams to support and debug timing, area, power issues.
+Experience with communicating across functional internal teams and vendors.
+Experience in SOC Design Integration and Front-End Implementation.
+Knowledge of Physical Design flow such as Floorplanning, CTS, Routing
+Knowledge of Timing/physical libraries, SRAM Memories.
+Knowledge of STA signoff and understanding of AOCV, POCV
+Experience with EDA tools and scripting languages (Python, TCL) used to build tools and flows
+Experience with Design Compiler, Spyglass, PrimeTime, Formality or equivalent tools.",N/A,N/A,https://rr.jobsyn.org/E81817729CB947FEA17A3DF3C5A4BE2B10
+"ASIC Engineer, Power","Bangalore, IND",Posted 25 days ago,Summary:,"Work with Architecture and Design teams to assess power/performance tradeoffs at design/arch/process-tech levels and drive for solutions for Meta workloads.
+Define the power specification at system and module level for Idle, TDP, typical use cases.
+Develop power modeling infrastructure in Python/C++.
+Work with or develop architectural simulators in order to model performance and power.
+Build power estimation flows at various levels of abstraction: C-model, RTL, Gate, Layout.
+Power characterization on silicon: idle, TDP, use case power & debug power issues on silicon.
+Partner with vendors to drive low-power requirements for SoC interfaces such as LPDDR, PCIe, etc.
+Partner with EDA tool vendors to select and deploy the appropriate power estimation tools.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience with power arch specification, modeling, and design with C++/Python or an equivalent high level language.
+Experience with EDA tools and scripting languages (Python, TCL) used to build tools and flows for complex environments.
+Understanding of ASIC design process and knowledge of leakage and dynamic power, and impact of environment and manufacturing process on power.
+Experience with communicating across functional internal teams and with vendors Knowledge of front-end and back-end ASIC tools.
+Experience with RTL design using System Verilog or other HDL.",N/A,N/A,https://rr.jobsyn.org/22FD52DA37794737A94631982E0C192D10
+Software Engineer - AI Transport,"Bangalore, IND",Posted 26 days ago,Summary:,"Design and implement drivers (and/or Firmware) for (network) ethernet adapter functions, Transport stack for RDMA, control functions with the host/accelerators.
+Build tests and help build an integrated CI/CD pipeline for delivery of software
+Bringup the stack in simulation and emulation environments
+Hardware bringup and test in a scaled environment
+Proficient in programming in C/C++/Python
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience with Linux Kernel, especially drivers and network stack
+Working knowledge of transport stack particularly RDMA (RoCEv2)
+Hands on experience with debugging large scale systems
+Experience with Qemu, FPGA Emulation environment is a plus",N/A,N/A,https://rr.jobsyn.org/D6798CA98999432DA8BFEEB6DDE1E17F10
+Software Engineer - Host networking,"Bangalore, IND",Posted 26 days ago,Summary:,"Design and implement drivers (and/or Firmware) for (network) ethernet adapter functions, Transport stack for RDMA, control functions with the host/accelerators.
+Collaborate with ASIC and HW teams, and external partners in building infrastructure scale embedded solutions
+Work with cross functional teams through releasing software to production and supporting them
+Mentor team members who will also work on building driver and firmware software
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+7+ years of experience in C/C++
+7+ years of experience in Systems programming, TCP/IP, RDMA/RoCE drivers and/or Firmware
+Experience with HW bringup
+Experience with Linux Kernel, especially drivers and network stack
+Working knowledge of transport stack particularly RDMA (RoCEv2) on Linux
+Experience with Qemu, FPGA Emulation environment is a plus
+Experience with Congestion control for RDMA/RoCE networks
+Working knowledge of Collectives (XCCL) and GPU direct for AI workloads
+Experience with HW offloads for Transport stack",N/A,N/A,https://rr.jobsyn.org/2D02D00D165A4CD590A844666F032A8010
+ASIC Engineer - Infra Specialist,"Bangalore, IND",Posted 26 days ago,Summary:,"Design and develop firmware and tooling for next-gen data center chips, Contribute to the design and development of embedded software engineering activities, analyze, design, develop, and debug firmware for a wide variety custom SoC for data center solutions
+Support all phases of SoC development – including early architecture requirements definition for custom silicon, firmware architecture, implementation, simulation, FPGA debug, chip bring up and support systems and software teams on algorithm development on validated systems
+Understand and implement power-management, BootROM, boot loaders, scheduling, inter-processor communication, firmware/system interfaces on Linux, RTOS and/or bare-metal environments
+B.S. degree in Computer Science or Electrical Engineering or equivalent experience
+Experience in firmware development
+Proficiency in C programming language
+Understanding of CPU architecture (ARM/RISC-V) and microprocessors
+Basic understanding of Real-Time Operating Systems (RTOS e.g. Zephyr) concepts and principles
+Familiarity with Linux operating system and its basic commands
+Knowledge of low-level programming and device driver development for ARM/RISC-V based systems
+Understanding of Linux kernel and device driver development
+Experience with debugging tools and techniques for embedded systems (e.g. JTAG)
+Experience in firmware development on System on Chip (SoC) platforms
+Familiarity with industry-standard protocols and interfaces (e.g. SPI, I2C, UART)
+Knowledge of scripting languages such as Python or Perl
+Familiarity with version control systems such as Git
+Familiarity with Agile development methodologies and continuous integration/continuous deployment (CI/CD) pipelines",N/A,N/A,https://rr.jobsyn.org/4BE99B17B257448FB35E4599CB07B0E310
+"ASIC Frontend Implementation, CDC/RDC","Bangalore, IND",Posted 30 days ago,Summary:,"Perform Flat and Hierarchical Clock Domain Crossing and work with the designers to analyze the complex clock domain crossings and sign off the CDC.
+Perform Flat and Hierarchical Reset Domain crossing Checks. Understand the Reset-Architecture by working with Design and FW teams and develop reset groups and the corresponding reset sequence for RDC.
+Perform RTL Lint and work with the Designers to create waivers.
+Perform RTL DFT Analysis and improve the DFT coverage for Stuck-at faults.
+Run Logic/Physical Synthesis using advanced optimization techniques and generate optimized Gate Level Netlist for Timing, Area, Power.
+Developing Automation scripts and Methodology for all FE-tools including (Lint, CDC, RDC,).
+Work closely with the Design Engineers, DV Engineers, Emulation Engineers in supporting them with the handoff tasks. Interact with Physical Design Engineers and provide them with timing/congestion feedback.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+8+ years of experience in static verification tools
+Experience with Lint, Clock Domain & Reset Domain crossing.
+Experience with SOC CDC signoff
+Knowledge of SOC Integration (Clocking, Reset, PLL, etc)
+Knowledge of front-end ASIC flows
+Experience with RTL design using SystemVerilog or other HDL.
+Experience with communicating across functional internal teams and vendors.
+Experience with SOC Design Integration and Front-End Implementation.
+Knowledge of Timing/physical libraries, SRAM Memories.
+Experience with Design Compiler, Spyglass, PrimeTime, Formality or equivalent tools.
+Experience with Netlist-CDC Analysis and improving MTBF
+Experience with developing structural rule based checks for RTL & Netlist
+Scripting and programming experience using Perl/Python, TCL, and Make.",N/A,N/A,https://rr.jobsyn.org/B759EB8881984E8EA6E4D9B7B6CCA67F10
+"ASIC Engineer, Architecture","Bangalore, IND",Posted 31 days ago,Summary:,"Work on developing Data Center Machine Learning ASIC architecture, algorithms, models, or tools
+Analyze and map data center workloads to ASIC architecture, as well as develop performance and functional models to validate the architecture
+Implement various reference silicon architecture models needed for the validation of the accelerators
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+5+ experience in either silicon architecture, silicon modeling, performance architecture, kernel development, or building tools for silicon
+Programming in C, C++, Python, or related Programming Languages
+Experience and knowledge of Computer Architecture, or tools for silicon development
+Experience and knowledge working in building custom silicon
+Master’s or PhD degree in Electrical Engineering, Computer Engineering or related areas Experience driving power and performance trade-offs",N/A,N/A,https://rr.jobsyn.org/AF8B65C7E00847EB81F35427B17D047E10
+"ASIC Engineer, SoC Architect","Bangalore, IND",Posted 31 days ago,Summary:,"Work on modeling, performance analysis and architecture definition of Machine Learning ASICs.
+Map Data Center workloads to heterogeneous ASICs that contain multiple different programmable processors and hardware accelerators. Perform detailed calculations to specify computation throughput, memory bandwidth and latency, evaluate performance v/s area v/s power tradeoffs.
+Identify appropriate workloads and micro-benchmarks to be used for performance analysis and drive this analysis on simulation and emulation platforms to define and validate the architecture.
+Evangelize your architectural solutions with your peers and leadership, while mentoring members of the architecture team.
+Collaborate with cross functional teams working on RTL design, Design Verification, Firmware/Software development, Pre-Post silicon validation and Program Management to deliver first pass functional silicon on an aspirational schedule.
+Collaborate with software and firmware teams to ensure that the ASIC meets end to end application performance goals while maintaining ease and efficiency of software development.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience and knowledge of Computer Architecture concepts such as microprocessor architecture, memory systems, on-chip interconnection networks, hardware/software partitioning etc.
+Programming in C or C++ with knowledge of mapping hardware algorithms to efficient C/C++ code.
+12+ years of prior experience in defining and delivering multiple high performance ASICs into production, with focus on architecture definition and performance analysis.
+Master's or PhD degree in Electrical Engineering, Computer Engineering or related field.
+Domain knowledge in one or more of power/performance tradeoffs, digital signal processing, ML networks, ML frameworks such as Pytorch.",N/A,N/A,https://rr.jobsyn.org/798E91E43B26466FBC76BCEFD96B9E2710
+ASIC Engineering Manager (Validation),"Bangalore, IND",Posted 33 days ago,Summary:,"You will lead teams who write tests, create bare metal operating systems, enable frameworks that allow us to reuse and scale testing from pre-silicon platforms to many ASICs in the lab during the post silicon phase.
+Working with end users and cross functional partners to understand system use cases to help guide validation. Ensuring a tight loops between hardware qualification and the final application use models
+We focus on volume as well as the velocity of qualifications to allow the fastest possible ramp to production.
+The team works on all aspects of silicon productization, from early architecture and design inputs, to pre-silicon validation, to bring-up and post-silicon characterization. This role leads across multiple engineering disciplines, domains and phases.
+You will lead teams who work on extensive functional and electrical characterization over temperature, process corner and voltage.
+To accomplish this at scale, we build and maintain extensive lab automation that will require your support and long term vision.
+Be both a highly technical, and an effective people manager
+Participate in technical design
+Define and influence product strategy
+Experience in recruiting and managing technical teams, including performance management
+Demonstrate experience in ASIC Design, Development or Validation (Silicon bringup, validation, emulation, characterization)
+BS or advanced degree in Electrical Engineering, Computer Engineering, Computer Science, Engineering, Math, Physics or a related field or equivalent experience
+Experience in leading strategic implementation and planning for risk and growth
+Developing and managing requirements, and making data-driven decisions
+5+ years of experience leading teams with some of the following modules/domains: PCIe, Networking, Flash, Memory, CPU, GPU, DRAM (DDR4/5 or HBM)
+5+ years of experience in leading/managing hands-on SW/FW/HW engineering teams to build systems/products for datacenter environments, consumer devices/HW, or similar",N/A,N/A,https://rr.jobsyn.org/659672B76CB4446C9676241456BE684B10
+"ASIC Engineer, Physical Design","Bangalore, IND",Posted 33 days ago,Summary:,"Develop and own physical design implementation of multi-hierarchy low-power and high-performance designs, including physical-aware logic synthesis, floorplan, place and route, clock tree synthesis, static timing analysis, IR drop, EM, and physical verification in advanced technology nodes.
+Resolve design and flow issues related to the physical design, identify potential solutions, and drive execution.
+Deliver physical design of an end-to-end IP or integration of ASIC/SoC design and point out lower power and higher performance trade-offs.
+Define and implement schemes, including semi-custom placement and routing, to improve performance and power.
+Work with the RTL design team to understand partition architecture and drive physical aspects early in the design cycle.
+Interface with the RTL design team to drive design modifications to resolve congestion/timing issues and implement functional ECO’s.
+Use EDA tool-based programming and scripting techniques to automate and improve throughput and quality.
+Interact with tool vendors to drive tool fixes and flow improvements. Perform tool evaluations of new vendor tools and functions.
+Experience in physical design and timing closure.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Knowledge of RTL2GDSII flow and design tape-outs in 5nm or below process technologies.
+Experience with EDA tools like DC/Genus, Innovus/ICC2, Primetime, Redhawk/Voltus, or Calibre.
+Hands-on experience in SoC floor planning, place & route, power and clock distribution, and timing convergence of high-frequency designs.
+Knowledge of geometry/process/device technology implications on physical design.
+Experience with large SOC designs (>100M gates) with frequencies over 1GHZ.
+10+ years of experience in interpersonal, teamwork, and demonstrated experience communicating and interfacing with cross-functional teams, IP, and EDA vendors.
+Programming/scripting skills: TCL, Python, Perl or Shell.
+Experience in full chip floor planning, partitioning, budgeting, and power grid planning.
+Experience with low power implementation, power gating, multiple voltage rails, UPF/CPF knowledge.
+Experience in planning, implementing, and analyzing high-speed clock distribution networks. Experience with alternate strategies for clock distribution, including standard trees, mesh, H-Tree, and clock power reduction techniques.
+Knowledge of static timing analysis and concepts, defining timing constraints and exceptions, corners/voltage definitions.
+Knowledge of Circuit design, device physics, and demonstrated experience in sub-micron technology.
+Experience in the physical design of data-path intensive designs.
+Experience in the 3D-IC technology, methodology, and advanced packaging.
+Experience in validating Power Distribution Network (PDN), IR/EM, Thermals for 3D-IC.",N/A,N/A,https://rr.jobsyn.org/CE7518569C45404F8118114E025611A910
+"Software Engineer, Product","Bangalore, IND",Posted 33 days ago,Summary:,"Full stack development with a variety of coding languages
+Create products and features using internal programming language Hack
+Implement web or mobile interfaces using XHTML, CSS, and JavaScript
+Work closely with our product management and design teams to define feature specifications and build products leveraging frameworks such as React and React Native
+Work closely with operations and infrastructure to build and scale back-end services
+Build report interfaces and data feeds
+Sets direction and goals for the team regarding project impact, product quality and engineering efficiency
+Leads major initiatives, projects, teams, rollouts and phased-releases
+Helps to onboard new team members, provides mentorship and enables successful ramp up on your team's code bases
+8+ years of programming experience in a relevant programming language
+6+ years relevant experience building large-scale applications or similar experience
+Experience with C, C++, Java, C# or other relevant coding languages
+Experience working with relational databases and SQL
+Experience leading major initiatives successfully
+Experience leading projects and teams appropriately
+Experience building and shipping high quality work and achieving high reliability
+Experience improving quality through thoughtful code reviews, appropriate testing, proper rollout, monitoring, and proactive changes
+Experienced in utilizing data and analysis to explain technical problems and providing detailed feedback and solutions
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience with scripting languages such as Python, Javascript or Hack",N/A,N/A,https://rr.jobsyn.org/99FCDBB5851A415BA2F66AE7B89205D010
+"Software Engineer, Machine Learning","Bangalore, IND",Posted 33 days ago,Summary:,"Play a critical role in setting the direction and goals for a sizeable team, in terms of project impact, ML system design, and ML best practices
+Adapt standard machine learning methods to best exploit modern parallel environments (e.g., distributed clusters, multicore SMP, and GPU)
+Re-evaluate the tradeoffs of already shipped features/ML systems, and drive large efforts across multiple teams to reduce technical debt, designing from first principles when appropriate
+Leading a team from a technical perspective to develop ML best practices and influence high engineering standards
+Be a go-to person to escalate the most complex online/production performance and evaluation issues, that require an in-depth knowledge of how the machine learning system interacts with systems around it
+Develop highly scalable classifiers and tools leveraging machine learning, data regression, and rule-based models
+Suggest, collect and synthesize requirements and create effective feature roadmap
+Code deliverables in tandem with the engineering team
+8+ years of experience in software engineering, or a relevant field. 4+ years of experience if you have a PhD
+6+ years of experience in one or more of the following areas: machine learning, recommendation systems, pattern recognition, data mining, artificial intelligence, or related technical field
+Experience with scripting languages such as Python, Javascript or Hack
+Experience leading major initiatives successfully
+Experience building and shipping high quality work and achieving high reliability
+Experience with developing machine learning models at scale from inception to business impact
+Knowledge developing and debugging in C/C++ and Java, or experience with scripting languages such as Python, Perl, PHP, and/or shell scripts
+Experience demonstrating technical leadership working with teams, owning projects, defining and setting technical direction for projects
+Experienced in utilizing data and analysis to explain technical problems and providing detailed feedback and solutions
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Masters degree or PhD in Computer Science or a related technical field
+Exposure to architectural patterns of large scale software applications
+Experience with scripting languages such as PyTorch and TensorFlow",N/A,N/A,https://rr.jobsyn.org/E8C3475105744CA8B0EB46DDC63D14E010
+Software Engineering Manager,"Bangalore, IND",Posted 33 days ago,Summary:,"Be both a highly technical, hands-on coder and effective people manager
+Hold your own in technical discussion, be a subject matter expert, and have strategic influence
+Participate in technical design
+Communicate cross-functionally and drive engineering efforts
+Measure the impact of the team and set clear expectations and goals
+Manage the coordination of the activities of the team with responsibility for results, including costs, methods, and staffing.
+3+ years of Engineering Management experience
+5+ years of software engineering work experience, including hands-on technical management
+5+ years coding in C, C++, Java, C# or other relevant coding languages
+Demonstrated experience and skills to recruit and manage technical teams, including performance management
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Bachelor's or Master’s degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience with scripting languages such as Python, Javascript or Hack",N/A,N/A,https://rr.jobsyn.org/088481132AF54D16B58461672FDAD50510
+"Director, Engineering","Bangalore, IND",Posted 33 days ago,Summary:,"Lead, drive and execute on our strategy for delivering enterprise systems
+Identify new opportunities for the larger organization and influence the appropriate people for staffing/prioritizing these new ideas
+Lead long term technical vision and roadmap for large enterprise-wide efforts
+Collaborate with various functions, drive engineering initiatives and have an impact at an organizational level
+Lead teams that deliver on multiple projects of increasing dependencies in an ambiguous or high-impact area.
+Work effectively with cross functional partners and stakeholders to set and achieve optimal outcomes.
+Measure the impact of team and set clear expectations and goals.
+Hire, build and manage engineering teams that deliver on multiple projects of increasing dependencies
+Requires a Bachelor’s degree in Computer Science, Computer Software, Engineering, Applied Sciences, Mathematics, Physics, or related field, followed by ten+ years of progressive, post baccalaureate work experience in the job offered or in a computer-related occupation
+Be a subject matter expert in at least one specific domain (examples: recruiting, people, finance, supply chain).
+Experience building large scale enterprise software systems from the ground up
+Experience as a great collaborator, experience building models & processes for aligning work across large teams, experience building the relationships needed to cut through obstacles and quickly resolve problems.
+Requires ten years of experience in the following:
+1. Coding in one of the following languages: C++, C#, Java, Javascript, Python, or PHP
+2. Management experience with technical teams, and as a technical lead
+3. Designing and developing distributed systems
+4. Building enterprise systems across Finance, Supply Chain or HR
+5. Defining and managing software projects, and making data-driven decisions
+Experience setting up and leading an engineering office",N/A,N/A,https://rr.jobsyn.org/B8A6789659FA48879E6D50C91766A48410
+Software Engineering Manager - Host Networking,"Bangalore, IND",Posted 33 days ago,Summary:,"Build the team of Software Engineers on site
+Own and deliver programs with the team
+Support Software Engineers through design and implementation tasks
+Coach and provide career development support
+Actively manage performance issues where needed
+Collaborate with Cross Functional partners and External Vendors
+Support team through conflict resolution
+Bachelor of Science in Computer Science/Engineering or related areas and 10+ years of Experience, with at least 5 of them in Management roles
+Experience building a team from ground up
+Experience working with Cross Functional teams across geographies
+Working knowledge in delivering complex infrastructure products in embedded space
+Technical proficiency in at least one or more: Embedded systems, Operating Systems (especially Linux Kernel), Networking, Firmware for Server or Infrastructure products
+Project Management Skills
+Experience with Network Interface Cards (Ethernet Adapters)
+Experience with one or more Transport protocols such as RDMA/RoCE or TCP, and related congestion management strategies
+Familiarity with Lab bringup and Software and Hardware integration activities
+Experience supporting deployment of infrastructure products in large scale environment",N/A,N/A,https://rr.jobsyn.org/C360A3B221504FC99FF647292B5B038210
+"Software Engineer, Product","Bangalore, IND",Posted 33 days ago,Summary:,"Full stack web/mobile application development with a variety of coding languages
+Create products and features using internal programming language Hack
+Implement web or mobile interfaces using XHTML, CSS, and JavaScript
+Work closely with our product management and design teams to define feature specifications and build the next generation of products leveraging frameworks such as React and React Native
+Work closely with operations and infrastructure to build and scale back-end services
+Build report interfaces and data feeds
+Complete large features (each with many tasks) and responsible of areas in the system independently without guidance
+Proactively identify and drive changes as needed for assigned codebase, product area and/or systems
+5+ years of demonstrated experience driving change within an organization and leading complex technical projects
+5+ years of experience building large-scale infrastructure applications
+5+ years of experience building maintainable and testable code bases, including API design and unit testing techniques
+5+ years of experience working with relational databases and SQL
+Experience with C, C++, Java, C# or other relevant coding languages
+Experience in leading people towards a common goal
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience with scripting languages such as Python, Javascript or Hack",N/A,N/A,https://rr.jobsyn.org/E6CBF643EF7C41A99F0DC456352D0D1D10
+"Asic Engineer, EDA Infrastructure","Bangalore, IND",Posted 33 days ago,Summary:,"Front End implementation flow development and support
+Internal tools development and automation to help improve productivity across ASIC design cycles including but not limited to RTL generation tools, memory selection automation, register generation, filelist generation
+Manage the internal EDA license requests, installation and license forecast as well as EDA tool installation and maintenance
+Work with internal infrastructure team on compute grid, storage management and job scheduling architecture, efficiency and maintenance
+Work with internal infrastructure team on adapting Meta infrastructure to ASIC design solutions, including but not limited to Source Control Management, Continuous Integration, data management and reporting
+RTL2GDS flow development and support
+Physical Design implementation flow development and support
+Knowledge of front-end and back-end ASIC tools and flows
+Experience with RTL design using SystemVerilog or other HDL
+Experience with EDA tools and scripting languages (Python, Tcl) used to build tools and flows for complex environments
+Experience with ASIC EDA infrastructure (compute, storage, job scheduling) management, maintenance and support
+Experience with developing and supporting solutions for ASIC design environment and infrastructure
+Experience with communicating across functional internal teams and with vendors
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience setting up EDA infrastructure from scratch
+User experience and customer oriented solutions",N/A,N/A,https://rr.jobsyn.org/34C9C36211134E03B16A4155CDAB11E610
+Design Verification Engineering Manager,"Bangalore, IND",Posted 33 days ago,Summary:,"Partner with internal and external cross-functional teams, across all levels of a corporation, from executives, team managers and individual contributors including development engineers, capacity planners and supply chain experts
+Contribute to and drive development of and maintain overall silicon strategy aligned to corporation's Long Range Plan objectives
+Collaborate with IP development teams, and participate in, and support soft and hard IP identification, selection and IP licensing
+Build, lead, and support a team of ASIC engineers through hiring, training, and guidance to drive on-time and on-budget product delivery
+Contribute to, analyze, review SOWs from vendors, supporting documentation, requirements sets that meet the needs of internal customers
+Support engineering teams to define, debug, implement and deliver total solutions around purpose built ASICs
+Define, implement and maintain key performance indicators (KPI) for areas of responsibility
+Partner with technical program management and supply chain team members to manage external development partners, suppliers and vendors
+Support managers supporting design verification team
+B.S. or M.S. degree in Computer Engineering or Electrical Engineering, relevant technical field, or equivalent practical experience
+12+ years experience in ASIC/SoC design verification
+8+ years of experience as a People Manager, leading people managers and senior ICs.
+Clear understanding of complexities involved with various design verification tools, including Synopsys VCS or Cadence Xcelium Simulator, Verdi, JasperGold or VC Formal
+Track record of first-pass success in ASIC Development
+Experience working across multiple projects and adjusting priorities in partnership with stakeholders
+Experience managing and delivering UVM constrained random test benches
+Experience with interpreting functional specs and creating comprehensive test plan
+Experience managing managers who are supporting small/mid size teams
+Hands-on experience with complex subsystems like memory, LPDDR, HBM, cache, PCIe, or network-on-chip including performance verification
+In depth knowledge of at least one of these areas - video coding standards, signal processing algorithms, neural networks and machine learning concepts, and/or other neural network development framework
+Experience in formal verification techniques and methodologies",N/A,N/A,https://rr.jobsyn.org/2FFE50EBF6994D49AE3A9DCFBBFDA8C210
+"Software Engineering Manager, Machine Learning","Bangalore, IND",Posted 37 days ago,Summary:,"Lead teams that deliver on multiple projects of increasing dependencies in an ambiguous or high-impact area
+Work with your team and cross-functional partners to define and influence strategy
+Drive roadmap creation and execution
+Collaborate with various functions, drive engineering initiatives and have an impact at an organizational level
+Participate in technical design
+Measure the impact of your team and set clear expectations and goals
+Work effectively with cross-functional partners and stakeholders to set and achieve optimal outcomes
+Partner with leadership to influence and drive organization design, contribution and prioritization
+5+ years of software engineering work experience, including hands-on technical management building large scale systems, algorithms, and toolsets within the Machine Learning domain
+5+ years experience coding in one of the following languages: C++, Java, Python and/or PHP
+BS / MS in Computer Science or related discipline (In lieu of degree, 4+ years work experience)
+Demonstrated experience recruiting and managing technical teams, including performance management
+Be both highly technical and an effective people manager
+Experience supporting machine learning teams
+Be a subject matter expert in an ML domain
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.",N/A,N/A,https://rr.jobsyn.org/ED16AB7DC4A9440ABE0B3EAFB4F34F7B10
+"Software Engineer, Machine Learning","Bangalore, IND",Posted 37 days ago,Summary:,"Leading projects or small teams of people to help them unblock, advocating for ML best practices
+Adapt standard machine learning methods to best exploit modern parallel environments (e.g. distributed clusters, multicore SMP, and GPU)
+Develop highly scalable classifiers and tools leveraging machine learning, data regression, and rules based models
+Suggest, collect and synthesize requirements and create effective feature roadmaps
+Code deliverables in tandem with the engineering team
+6+ years of experience in software engineering or a relevant field. 3+ years of experience if you have a PhD
+2+ years of experience in one or more of the following areas: machine learning, recommendation systems, pattern recognition, data mining, artificial intelligence, or a related technical field
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience
+Experience with scripting languages such as Python, Javascript or Hack
+Experience with developing machine learning models at scale from inception to business impact
+Knowledge developing and debugging in C/C++ and Java, or experience with scripting languages such as Python, Perl, PHP, and/or shell scripts
+Experience building and shipping high quality work and achieving high reliability
+Track record of setting technical direction for a team, driving consensus and successful cross-functional partnerships
+Experience improving quality through thoughtful code reviews, appropriate testing, proper rollout, monitoring, and proactive changes
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Masters degree or PhD in Computer Science or another ML-related field
+Exposure to architectural patterns of large scale software applications
+Experience with scripting languages such as Pytorch and TensorFlow",N/A,N/A,https://rr.jobsyn.org/8E0D9B8C9ABB4DB0A4725F8F66BBE28110
+"Software Engineer, Product","Bangalore, IND",Posted 37 days ago,Summary:,"Full stack web/mobile application development with a variety of coding languages
+Create products and features using internal programming language Hack
+Implement web or mobile interfaces using XHTML, CSS, and JavaScript
+Work closely with our product management and design teams to define feature specifications and build the next generation of products leveraging frameworks such as React and React Native
+Work closely with operations and infrastructure to build and scale back-end services
+Build report interfaces and data feeds
+Complete medium to large features (each with many tasks) independently without guidance
+Proactively identify and drive changes as needed for assigned codebase, product area and/or systems
+2+ years of programming experience in a relevant language
+2+ years relevant experience building large-scale applications or similar experience
+2+ years experience designing and completing medium to large features independently without guidance
+2+ years experience identifying and driving changes to applications as needed
+Experience with C, C++, Java, C# or other relevant coding languages
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience with scripting languages such as Python, Javascript or Hack",N/A,N/A,https://rr.jobsyn.org/3F3DE323C8BC477EBC5A56A20A98102710
+"Software Engineer, Machine Learning","Bangalore, IND",Posted 37 days ago,Summary:,"Develop highly scalable classifiers and tools leveraging machine learning, data regression, and rule-based models
+Suggest, collect and synthesize requirements and create effective feature roadmap
+Code deliverables in tandem with the engineering team
+Adapt standard machine learning methods to best exploit modern parallel environments (e.g. distributed clusters, multicore SMP, and GPU)
+2+ years of programming experience in a relevant programming language
+2+ years of hands-on experience in one or more of the following areas: machine learning, recommendation systems, pattern recognition, data mining or artificial intelligence
+2+ years relevant experience using frameworks such as PyTorch, TensorFlow or equivalent
+Currently has, or is in the process of obtaining a Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience. Degree must be completed prior to joining Meta
+Proven experience to translate insights into business recommendations
+Experience with scripting languages such as Python, Javascript or Hack
+Experience building and shipping high quality work and achieving high reliability
+Successful candidate must remain in role in the same team in India for a minimum period of 24 months before being eligible for transfer to another role, team or location.
+Exposure to architectural patterns of large scale software applications
+PhD degree or research focused Master degree in ML areas",N/A,N/A,https://rr.jobsyn.org/B0974508E55E4C4894969EF14CDEF21D10
+"Software Engineer (Leadership), Host Networking","Bangalore, IND",Posted 38 days ago,Summary:,"Own design and architecture of Drivers and Firmware for NICs supporting AI workloads
+Collaborate with ASIC and HW teams, and external partners in building infrastructure scale embedded solutions
+Mentor team members who will also work on building driver and firmware software
+Work with cross functional teams through releasing software to production and supporting them
+Help build roadmap for our solutions and the team
+Bachelor's degree in Computer Science/Engineering or relevant technical field and 10+ years of experience
+Proficiency in coding in C/C++
+Experience building driver and/or firmware for embedded infrastructure sytems running Linux
+Experience with RDMA/RoCE and/or TCP stack for Linux
+Experience with Hardware Bringup
+Experience developing Drivers and/or Firmware for Networking stack in Linux, preferably for NICs
+Experience with Congestion control for RDMA/RoCE networks
+Experience with simulation environments with Qemu and/or emulation environments
+Working knowledge of Collectives (XCCL) and GPU direct for AI workloads",N/A,N/A,https://rr.jobsyn.org/3384890E73104E0A9418C2C94FA04D4410
+"ASIC Engineer, Host & Userspace, Infra Silicon Enablement","Bangalore, IND",Posted 45 days ago,Summary:,"Work across all aspects of silicon lifecycle, from early architecture and design inputs, to pre-silicon validation, to bring-up and post-silicon to deployment in the fleet, focused on application performance and reliability.
+Design and implement userspace drivers (and/or Firmware) for (network) ethernet adapter functions and AI accelerator functions.
+Work directly with the design & verification team to enable a comprehensive pre and post-silicon test plan.
+Develop functional, stress, and performance tools for Meta custom ASICs.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+5+ years of experience in hands-on SW/FW/HW/ASIC Engineering.
+Experience in development with C/C++
+Experience with Linux server systems or network devices (routers, switches, load balancers).
+Proven troubleshooting, debug and analytics experience across Product Lifecycle.
+Experience working with internal and external partners for device integration and systems development.
+Experience in ASIC Design, Development, or Validation (Silicon bringup, validation, emulation, etc.)
+Experience with VFIO, DPDK, SPDK, or other userspace driver frameworks.
+Experience with Linux Kernel, especially drivers and network stack.
+Working knowledge of transport stack, particularly RDMA (RoCEv2)
+Experience in Python
+Experience with distributed computing environments such as MPI or PyTorch Distributed.
+Experience with performance and debugging tools.",N/A,N/A,https://rr.jobsyn.org/6B1E98466406419792A229BF82E0AB6510
+Business Messaging Specialist,"Gurgaon, IND",Posted 45 days ago,Summary:,"Develops compelling, value-proposition presentations (e.g. with the use of business cases) and specialized business plans for customers that drive business outcomes. Demonstrates thought leadership and presents business plans to customers to generate new opportunities.
+Builds relationships with CXO/decision makers across business, technical, customer experience, marketing etc. to gain mindshare on WhatsApp as a strategic platform.
+Develops a comprehensive understanding of customer's business needs and strategies and offers solutions on WhatsApp as a platform. Creates trust to influence for impact and acts as a trusted advisor to help the customer transform their business.
+Develops strategies to manage pipelines and meet sales goals by reviewing forecasts, assessing and mitigating risks, and ensuring strategy alignment with business priorities. Leverages available solutions as well as engages partners to build new solutions for customers as per the business priorities of customers.
+Actively seeks customer feedback (both formal and informal) of assigned accounts regarding ways to identify and understand the drivers of satisfaction and/or dissatisfaction. Engages Support & Engineering teams to address issues, determine the root cause of problems, remove blockers, and improve the customer's overall experience.
+Work with client facing teams and cross-functional colleagues to gather client feedback to help influence product decisions Provides feedback to product and engineering teams to identify product gaps that can help open new, large markets
+Work with in-market global Messaging teams to craft high impact scalable programs to deepen client relationships and drive incremental revenue growth. Delivers training and builds global playbooks/guides for clients regarding best practices around product implementation and solutions success. Work with Meta Leadership and cross-functional teams to develop strategies to scale client facing activities
+Experience of sales and business development background, with 8+ years of enterprise selling experience
+Possess executive maturity, presence and experience in building trust with CXO/Decision makers and articulating business value to key decision makers
+Experience in leading and driving the entire sales cycle, orchestrating virtual selling teams where necessary, leveraging repeatable offerings that maximize revenue and increase customer satisfaction
+Experience operating autonomously across multiple teams, demonstrated critical thinking, and thought leadership
+Analytical and problem-solving experience with large-scale systems
+Bachelor’s degree or equivalent work experience
+Industry Knowledge in CPG/FMCG, D2C verticals",N/A,N/A,https://rr.jobsyn.org/559F3D1CA60D435D835DC4E53FE0608D10
+"ASIC Engineer, Accelerator Systems","Bangalore, IND",Posted 45 days ago,Summary:,"Design, develop, and maintain Linux device drivers/kernel modules, user-space drivers, user-space libraries and APIs, system services and daemons to support the ASIC
+Develop diagnostics tools to troubleshoot and debug issues with the ASIC and related software components
+Optimize and benchmark the performance of the ASIC and related software components
+Collaborate with hardware engineers to understand the ASIC architecture and design
+Collaborate with software engineers to integrate the ASIC into the overall software stack
+Participate in code reviews and contribute to the development of best practices
+Stay up-to-date with the latest developments in Linux kernel development and related technologies
+BS/MS in Computer Science or a related field
+5+ years of experience in Linux systems development
+Strong knowledge of C and C++ programming languages
+Experience of developing diagnostic/telemetry tools and RAS features
+Experience with Linux kernel internals, device drivers, and kernel modules
+Experience with user-space driver development and API design
+Knowledge of computer architecture and hardware design principles
+Experience with performance optimization and benchmarking
+Excellent problem-solving skills and ability to work independently
+Strong written and verbal communication skills
+Experience with AI accelerator ASICs
+Experience with continuous integration and continuous deployment (CI/CD) pipelines
+Experience with performance optimization and benchmarking
+Experience of developing RAS features for a product",N/A,N/A,https://rr.jobsyn.org/E8A188B70896438B97DF4D2561B44B3010
+"Creative Strategist, India","Bangalore, IND",Posted 53 days ago,Summary:,"Increase the creative sophistication and product adoption through scaled solutions and initiatives.
+Work closely with sales and cross functional teams to understand the needs of our book of business and develop solutions to address them.
+Inspires the industry by representing Creative Shop and Meta at events in the market.
+Contribute to Creative Shop’s workstreams and programs through strategy and executional content development at a global level.
+Own sales relationships within your market and tier of business.
+Self-motivated and can work independently.
+Fluent in English
+Fluent in all aspects of Facebook, from the massive reach to mobile and video best practices
+Fluent in all aspects of Instagram, from the creative community to creativity
+Articulate with critique of both strategic approach and aesthetic execution
+Experience in storytelling, verbal and written communications skills
+Can think big and apply that at scale to a wide range of opportunities.
+Data fluency – you are happy getting your hands dirty with data, measurement and you are willing to learn new tools and distill creative and performance data into unique insights
+Entrepreneurial – this team is inventing everyday and it takes tenacity and bravery to see the big opportunities to thrive
+Strategic – Experience and understanding of brand and performance marketing and how to build brilliant strategies across multiple verticals
+A passion for people and desire to uncover consumer behavior, to help our global clients connect with customers in an impactful way
+Experience in bringing ideas to life with Keynote and PowerPoint. Experience with InDesign, Illustrator, Photoshop a plus.
+3+ years of experience in brand marketing/advertising
+Interest and experience working with AI tools and new technologies preferred",N/A,N/A,https://rr.jobsyn.org/DC6C2197F0FC4329ABCA0440A55A8F6010
+"Creative Strategist, India","Gurgaon, IND",Posted 53 days ago,Summary:,"Increase the creative sophistication and product adoption through scaled solutions and initiatives.
+Work closely with sales and cross functional teams to understand the needs of our book of business and develop solutions to address them.
+Inspires the industry by representing Creative Shop and Meta at events in the market.
+Contribute to Creative Shop’s workstreams and programs through strategy and executional content development at a global level.
+Own sales relationships within your market and tier of business.
+Self-motivated and can work independently.
+Fluent in English
+Fluent in all aspects of Facebook, from the massive reach to mobile and video best practices
+Fluent in all aspects of Instagram, from the creative community to creativity
+Articulate with critique of both strategic approach and aesthetic execution
+Experience in storytelling, verbal and written communications skills
+Can think big and apply that at scale to a wide range of opportunities.
+Data fluency – you are happy getting your hands dirty with data, measurement and you are willing to learn new tools and distill creative and performance data into unique insights
+Entrepreneurial – this team is inventing everyday and it takes tenacity and bravery to see the big opportunities to thrive
+Strategic – Experience and understanding of brand and performance marketing and how to build brilliant strategies across multiple verticals
+A passion for people and desire to uncover consumer behavior, to help our global clients connect with customers in an impactful way
+Experience in bringing ideas to life with Keynote and PowerPoint. Experience with InDesign, Illustrator, Photoshop a plus.
+3+ years of experience in brand marketing/advertising
+Interest and experience working with AI tools and new technologies preferred",N/A,N/A,https://rr.jobsyn.org/A429DE0A6CAC46ADACA173ABB188A0C510
+"Creative Strategist, India","Mumbai, IND",Posted 53 days ago,Summary:,"Increase the creative sophistication and product adoption through scaled solutions and initiatives.
+Work closely with sales and cross functional teams to understand the needs of our book of business and develop solutions to address them.
+Inspires the industry by representing Creative Shop and Meta at events in the market.
+Contribute to Creative Shop’s workstreams and programs through strategy and executional content development at a global level.
+Own sales relationships within your market and tier of business.
+Self-motivated and can work independently.
+Fluent in English
+Fluent in all aspects of Facebook, from the massive reach to mobile and video best practices
+Fluent in all aspects of Instagram, from the creative community to creativity
+Articulate with critique of both strategic approach and aesthetic execution
+Experience in storytelling, verbal and written communications skills
+Can think big and apply that at scale to a wide range of opportunities.
+Data fluency – you are happy getting your hands dirty with data, measurement and you are willing to learn new tools and distill creative and performance data into unique insights
+Entrepreneurial – this team is inventing everyday and it takes tenacity and bravery to see the big opportunities to thrive
+Strategic – Experience and understanding of brand and performance marketing and how to build brilliant strategies across multiple verticals
+A passion for people and desire to uncover consumer behavior, to help our global clients connect with customers in an impactful way
+Experience in bringing ideas to life with Keynote and PowerPoint. Experience with InDesign, Illustrator, Photoshop a plus.
+3+ years of experience in brand marketing/advertising
+Interest and experience working with AI tools and new technologies preferred",N/A,N/A,https://rr.jobsyn.org/4A79BA661AF14FE8A482568EF166FE6A10
+Business Messaging Specialist,"Mumbai, IND",Posted 55 days ago,Summary:,"Develops compelling, value-proposition presentations (e.g. with the use of business cases) and specialized business plans for customers that drive business outcomes. Demonstrates thought leadership and presents business plans to customers to generate new opportunities.
+Builds relationships with CXO/decision makers across business, technical, customer experience, marketing etc. to gain mindshare on WhatsApp as a strategic platform.
+Develops a comprehensive understanding of customer's business needs and strategies and offers solutions on WhatsApp as a platform. Creates trust to influence for impact and acts as a trusted advisor to help the customer transform their business.
+Develops strategies to manage pipelines and meet sales goals by reviewing forecasts, assessing and mitigating risks, and ensuring strategy alignment with business priorities. Leverages available solutions as well as engages partners to build new solutions for customers as per the business priorities of customers.
+Actively seeks customer feedback (both formal and informal) of assigned accounts regarding ways to identify and understand the drivers of satisfaction and/or dissatisfaction. Engages Support & Engineering teams to address issues, determine the root cause of problems, remove blockers, and improve the customer's overall experience.
+Work with client facing teams and cross-functional colleagues to gather client feedback to help influence product decisions Provides feedback to product and engineering teams to identify product gaps that can help open new, large markets
+Work with in-market global Messaging teams to craft high impact scalable programs to deepen client relationships and drive incremental revenue growth. Delivers training and builds global playbooks/guides for clients regarding best practices around product implementation and solutions success. Work with Meta Leadership and cross-functional teams to develop strategies to scale client facing activities
+Experience of sales and business development background, with 8+ years of enterprise selling experience
+Possess executive maturity, presence and experience in building trust with CXO/Decision makers and articulating business value to key decision makers
+Experience in leading and driving the entire sales cycle, orchestrating virtual selling teams where necessary, leveraging repeatable offerings that maximize revenue and increase customer satisfaction
+Experience operating autonomously across multiple teams, demonstrated critical thinking, and thought leadership
+Analytical and problem-solving experience with large-scale systems
+Bachelor’s degree or equivalent work experience
+Industry Knowledge in CPG/FMCG, D2C verticals",N/A,N/A,https://rr.jobsyn.org/4D6D9AF29B484A0BB2A8E07267DE374910
+Logistics Asset Manager,"Bangalore, IND",Posted 59 days ago,Summary:,"Lead the ideation, technical development, implementation and or integration of innovative processes to support our growing product mix.
+Own the end to end asset management process and systems for supported business streams
+Support Regional/Country specific IT Logistics services as a service owner, including but not limited to operational oversight, governance, H&S adherence, service improvement, efficiency gains, risk management and mitigation, issue resolution, and overall service guidance for processes within your remit.
+Establish shared vision across the company by building consensus on priorities leading to product execution
+New business stream integration for your operation
+Define and analyze metrics that inform the success of products and services
+Drive process efficiency and automation consistently with a team of world-class engineers and designers
+Identify the key levers that have the greatest impact on operational efficiencies
+Maximize efficiency in a constantly evolving environment where the process is fluid and creative solutions are the norm
+Develop and maintain a well-coordinated internal relationship with key decision makers and with the wider enterprise organization
+Ensure that all activities for own area of responsibility are performed in line with local tax and accounting policies and procedures
+Advise stakeholders of supplier, market, commercial and contractual issues and risk
+Establish, maintain and follow-up frame agreements with regional partners and suppliers
+Cooperate across disciplines and departments at regional and global level
+Perform a variety of supply chain tasks with awareness across cultural, geographic and political environments
+Service owner for all internal/external audit requirements
+Ensure Trade Compliance and related operational requirements
+3+ years of supply chain experience, with focus on operational excellence, process improvement, inventory management, forward and reverse logistics
+Experience with enterprise inventory management & ticketing systems
+Experience optimizing supply chain processes to meet end customer service level agreement
+Experience managing regionally and/or globally dispersed assets
+Bachelor's Degree or equivalent experience
+Experience of effectively communicating new concepts and ideas to a wide-range of partners and stakeholders
+Experience of solving complex problems and embracing ambiguity to drive innovative and impactful solutions
+Demonstrated experience in operational delivery and oversight
+Focus on compliance, financial and security supply chain concepts
+Experience in metrics evaluation and using data to drive decision making
+Experience working within IT hardware asset management
+Experience of working within a changing environment, and pivoting to the areas of greatest opportunity",N/A,N/A,https://rr.jobsyn.org/3FF77C47A9DE4288829BE3A18C2F99E410
+Logistics Asset Manager,"Hyderabad, IND",Posted 59 days ago,Summary:,"Lead the ideation, technical development, implementation and or integration of innovative processes to support our growing product mix.
+Own the end to end asset management process and systems for supported business streams
+Support Regional/Country specific IT Logistics services as a service owner, including but not limited to operational oversight, governance, H&S adherence, service improvement, efficiency gains, risk management and mitigation, issue resolution, and overall service guidance for processes within your remit.
+Establish shared vision across the company by building consensus on priorities leading to product execution
+New business stream integration for your operation
+Define and analyze metrics that inform the success of products and services
+Drive process efficiency and automation consistently with a team of world-class engineers and designers
+Identify the key levers that have the greatest impact on operational efficiencies
+Maximize efficiency in a constantly evolving environment where the process is fluid and creative solutions are the norm
+Develop and maintain a well-coordinated internal relationship with key decision makers and with the wider enterprise organization
+Ensure that all activities for own area of responsibility are performed in line with local tax and accounting policies and procedures
+Advise stakeholders of supplier, market, commercial and contractual issues and risk
+Establish, maintain and follow-up frame agreements with regional partners and suppliers
+Cooperate across disciplines and departments at regional and global level
+Perform a variety of supply chain tasks with awareness across cultural, geographic and political environments
+Service owner for all internal/external audit requirements
+Ensure Trade Compliance and related operational requirements
+3+ years of supply chain experience, with focus on operational excellence, process improvement, inventory management, forward and reverse logistics
+Experience with enterprise inventory management & ticketing systems
+Experience optimizing supply chain processes to meet end customer service level agreement
+Experience managing regionally and/or globally dispersed assets
+Bachelor's Degree or equivalent experience
+Experience of effectively communicating new concepts and ideas to a wide-range of partners and stakeholders
+Experience of solving complex problems and embracing ambiguity to drive innovative and impactful solutions
+Demonstrated experience in operational delivery and oversight
+Focus on compliance, financial and security supply chain concepts
+Experience in metrics evaluation and using data to drive decision making
+Experience working within IT hardware asset management
+Experience of working within a changing environment, and pivoting to the areas of greatest opportunity",N/A,N/A,https://rr.jobsyn.org/B28A0C0846944F06B4D6D65D2E34719A10
+"Director, Data Protection Officer","Gurgaon, IND",Posted 61 days ago,Summary:,"Manage the relationship with India’s Data Protection Board/Ministry of Electronics and IT (MeitY) and oversee our relationship with other Data Protection Authorities in the AMET, Latin America, Canada and APAC regions.
+Lead the partnership with key stakeholders to establish the processes by which the Global DPO will carry out its responsibilities. The office will advise on key decisions, assess the privacy compliance programs in place to comply with applicable laws, support escalations and respond to user and regulator inquiries. Key partner teams include legal, privacy operations, policy, and the Product Compliance and Privacy organization.
+Provide strategic leadership within the Global DPO program on how we comply with our mandated responsibilities for the AMET, Latin America, Canada and APAC regions.
+Provide oversight into how we execute against privacy law (India DPDP inclusive) mandated responsibilities for products and processes such as reviewing Data Protection Impact Assessments (DPIAs), Data Subject Rights (DSR) escalations, advising on privacy compliance and Drive accountability and key performance indicators to measure success and ensure that critical projects remain on track
+manage dependencies, risks, and changes.
+Anticipate bottlenecks, provide escalation management, and ensure user privacy is not compromised.
+12+ years experience with compliance, program/project management, operations and/or strategy.
+Experience with engaging with regulators and navigating complex relationships with external stakeholders.
+Experience working within a product environment and partnering with cross-functional stakeholders, including legal, policy and product functions.
+Experience with advising on compliance with data protection laws and privacy requirements.
+Experience building and iterating on complex processes that require both process and change management.
+Outstanding communicator with a track record of aligning cross-functional teams around a common goal.
+Strong project management, problem solving, time-management and organizational skills, and the ability to set strategic priorities combined with a demonstrated aptitude of delivering operational results.
+Ability to thrive in ambiguity in an ever-evolving regulatory environment while building new processes, maturing existing processes and driving standardization across teams and functions.
+Knowledge of data protection and privacy requirements, preferable those applicable to a global tech company, and experience evaluating products or processes to ensure compliance with applicable requirements
+Experience on implementing mandated requirements of the DPO/acting as DPO.",N/A,N/A,https://rr.jobsyn.org/B64AC289A932466DADF7E7540C8DC32C10
+"ASIC Engineer, Design","Bangalore, IND",Posted 64 days ago,Summary:,"Architecture exploration
+Micro-architecture development
+RTL development using Verilog, System Verilog and HLS
+Lint, CDC, Synthesis, & Power Optimization
+Soft and hard IP identification, selection and integration
+Collaboration with verification and emulation teams in test plan development and debug
+Collaboration with implementation team to close the design on timing and power
+15+ years of silicon development experience
+Track record of first-pass success in ASIC Development
+Experience with Verilog or System Verilog
+Experience in one of these skills: Micro-architecture and RTL development for complex control and data path IPs, OR Experience in SoC Micro-architecture, Design and Integration, OR Implementation, Power methodology development
+Experience working across multiple projects
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience in data path development
+Experience in CPU, NOC, Memory and Peripheral Subsystems
+Experience in HLS
+Experience with Synthesis, Timing Closure and Formal Verification Methodology
+Experience with Power Analysis and Optimization
+Experience with scripting languages (TCL, Python, Perl, Shell-scripting)",N/A,N/A,https://rr.jobsyn.org/12FCE2D3C52542FE83EBF290CF1D3C7910
+"ASIC Engineer, Infra Silicon Enablement","Bangalore, IND",Posted 132 days ago,Summary:,"Working with end users to understand system use cases to help guide validation.
+Ensuring a tight loops between hardware qualification and the final application use models
+We focus on volume as well as the velocity of qualifications to allow the fastest possible ramp to production.
+The team works on all aspects of silicon productization
+from early architecture and design inputs, to pre-silicon validation, to bring-up and post-silicon characterization.
+The team's early engagement with the design team ensures that quality and debuggability are built into the design.
+We support the architecture team with insights from performance & power characterization to guide future improvements.
+We work directly with the verification team to enable a comprehensive pre and post silicon test plan.
+We write tests, create bare metal operating systems, enable frameworks that will allow us to reuse and scale testing from pre-silicon platforms to many ASICs in the lab during the post silicon phase.
+We work on extensive functional and electrical characterization over temperature, process corner and voltage.
+To accomplish this at scale, we build and maintain extensive lab automation.
+BS or advanced degree in Electrical Engineering, Computer Engineering, Computer Science, Engineering, Math, Physics or a related field or equivalent experience
+7+ years of experience in hands-on SW/FW/HW engineering to build systems/products for datacenter environments, consumer devices/HW, or similar
+7+ years of experience with proven troubleshooting analytics of server/systems architecture and components
+7+ years of experience in developing test specifications, procedures, and debug guides for test solutions.
+7+ years of experience with some of the following modules/domains: PCIe, Networking, Flash, Memory, CPU, GPU, DRAM (DDR4/5 or HBM)
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+7+ years of experience in ASIC Design, Development or Validation (Silicon bringup, validation, emulation, characterization)
+Experienced in the integration of lab tools for automated workflows
+7+ years of experience with Linux systems and server systems management
+7+ years of experience with some of the following modules/domains: Serdes, characterization, emulation, logic design, microarchitecture, validation, embedded programming
+5+ years of experience with embedded systems’ architecture and components, performance optimization of algorithms, test automation, and instrument communication (osciloscopes, analyzers, traffic generators, etc.)
+Experience in debugging tools for systems-on-chip (SoCs) - eg. JTAG, GDB, Trace32
+Knowledge of common bus protocols such as I2C, SPI, USB, and/or PCIe.
+Knowledge of of ASIC design flow, ASIC prototyping flow, and similar.
+Experience with Tool Chains: VCS, Palladium, Protium, Zebu, Veloce, Cadence, Mentor, Synopsys",N/A,N/A,https://rr.jobsyn.org/6D6174DCF7DB4E388272FECCF85FFAE110
+"Manager, ASIC Emulation","Bangalore, IND",Posted 135 days ago,Summary:,"Provide Leadership (Technical & Career) Guidance to our ASIC Engineers
+Scale the delivery of emulation and prototyping models from RTL on industry standard emulation and prototyping platforms.
+Guide the emulation test planning to ensure quality of the models and assist in pre-silicon validation.
+Drive innovation in emulation methodologies for HW verification and SW development.
+Develop emulation tools, workflows and infrastructure in collaboration with RTL, verification, validation and SW teams for productivity during debug, runtime, and data analysis of results from emulation runs.
+Develop emulation validation components for validation efficiency in testing, debug and automation.
+Develop and drive improvements using the latest emulation technology from industry.
+Partner with vendors to debug issues and deploy new emulation capabilities.
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+5+ Years of experience Managing/Leading ASIC teams and managing complex emulation environments.
+Experience with current emulation technologies and methods, example simulation acceleration, in-circuit emulation, speed bridges, virtual prototyping, hybrid methods.
+Track record of leadership in ‘first-pass success’ in ASIC where emulation is one of the key validation tools.
+Understanding of compilation and build flow with experience building images from scratch with necessary design modifications to adapt to emulation.
+Experience with verification, SoCs or similar designs.
+Experience in architecting emulation systems for various design scales (IP blocks, SOC, multi-chip system) with an understanding of trade-offs between performance and ease of debug.
+Experience managing multiple design releases and working with cross functional teams to support and debug customer issues.
+Experience with SystemVerilog and C++ to model RTL components and transactors.
+Experience with post-silicon bring up, debug and reproducing issues on emulator.
+Experience with Palladium, Protium, or Zebu tools.
+Experience partnering with the design, verification, validation and software development teams.",N/A,N/A,https://rr.jobsyn.org/0F2C431F623E4A0FAE8B9A0E60834BAB10
+ASIC Engineer - Infra Specialist,"Bangalore, IND",Posted 139 days ago,Summary:,"Design and develop firmware and tooling for next-gen data center chips, Lead the design and development of embedded software engineering activities and provide technical leadership and guidance to team members, analyze, design, develop, and debug firmware for a wide variety custom SoC for data center solutions
+Be a go-to person to escalate the most complex development, performance and evaluation issues that require in-depth knowledge of product-focused firmware development
+Support all phases of SoC development – including early architecture requirements definition for custom silicon, firmware architecture, implementation, simulation, FPGA debug, chip bring up and support systems and software teams on algorithm development on validated systems
+Play a critical role in the definition and execution of long-term roadmaps in partnership with with silicon architects, hardware designers, OS team, and algorithm and model development teams
+Understand and implement power-management, boot loaders, scheduling, inter-processor communication, firmware/system interfaces on Linux, RTOS and/or bare-metal environments
+B.S. degree in Computer Science or Electrical Engineering or equivalent experience
+12+ years of experience in embedded system development, including programming in C for development, debugging, testing and performance analysis
+Experience in BootROM, bootloaders and secure boot development
+Experience in platform firmware development for complex SoC's
+Experience working with embedded hardware platforms and exposure to concepts such as clock-level issues, interrupts, and polling
+Demonstrated expertise in developing with RTOS (preferably Zephyr) and embedded Linux
+Experience in peripheral drivers like PCIe, UART, I2C, SPI is plus
+Experience in Python or any other scripting language for tooling, test automation is a plus
+Experience leading complex features or projects across multiple teams
+Experience with lab instrumentation such as oscilloscopes, logic/protocol analyzers for debugging embedded systems at hardware level
+Experience delivering end to end product solution
+Demonstrated expertise in one or several of the following areas - SoC block understanding, board bring-up",N/A,N/A,https://rr.jobsyn.org/188A2811D0894FE3A5EB23897095C6AF10
+ASIC Engineer - Infra Specialist,"Bangalore, IND",Posted 139 days ago,Summary:,"Design and develop firmware and tooling for next-gen data center chips, Lead the design and development of embedded software engineering activities and provide technical leadership and guidance to team members, analyze, design, develop, and debug firmware for a wide variety custom SoC for data center solutions
+Be a go-to person to escalate the most complex development, performance and evaluation issues that require in-depth knowledge of product-focused firmware development
+Support all phases of SoC development – including early architecture requirements definition for custom silicon, firmware architecture, implementation, simulation, FPGA debug, chip bring up and support systems and software teams on algorithm development on validated systems
+Play a critical role in the definition and execution of long-term roadmaps in partnership with with silicon architects, hardware designers, OS team, and algorithm and model development teams
+Understand and implement power-management, boot loaders, scheduling, inter-processor communication, firmware/system interfaces on Linux, RTOS and/or bare-metal environments
+B.S. degree in Computer Science or Electrical Engineering or equivalent experience
+8+ years of experience in embedded system development, including programming in C for development, debugging, testing and performance analysis
+Experience in BootROM, bootloaders and secure boot development
+Experience in platform firmware development for complex SoC's
+Experience working with embedded hardware platforms and exposure to concepts such as clock-level issues, interrupts, and polling
+Demonstrated expertise in developing with RTOS (preferably Zephyr) and embedded Linux
+Experience in Python or any other scripting language for tooling, test automation is a plus
+Experience leading complex features or projects across multiple teams
+Experience with lab instrumentation such as oscilloscopes, logic/protocol analyzers for debugging embedded systems at hardware level
+Experience delivering end to end product solution
+Demonstrated expertise in one or several of the following areas - SoC block understanding, board bring-up",N/A,N/A,https://rr.jobsyn.org/17A4AAAFD17F4C79AEE2109639C81FFE10
+"ASIC Engineer, Design Verification","Bangalore, IND",Posted 142 days ago,Summary:,"Define and implement IP/SoC verification plans, build verification test benches to enable IP/sub-system/SoC level verification
+Develop functional tests based on verification test plan
+Drive Design Verification to closure based on defined verification metrics on test plan, functional and code coverage
+Debug, root-cause and resolve functional failures in the design, partnering with the Design team
+Collaborate with cross-functional teams like Design, Model, Emulation and Silicon validation teams towards ensuring the highest design quality
+Develop and drive continuous Design Verification improvements using the latest verification methodologies, tools and technologies from the industry
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience of at least 9+ years
+Track record of 'first-pass success' in ASIC development cycles
+Hands-on experience in Verilog, SystemVerilog, C/C++ based verification and UVM methodology
+Experience in IP/sub-system and/or SoC level verification based on SystemVerilog UVM/OVM based methodologies
+Experience in one or more of the following areas along with functional verification - SV Assertions, Formal, Emulation
+Experience in EDA tools and scripting (Python, TCL, Perl, Shell) used to build tools and flows for verification environments
+Experience in architecting and implementing Design Verification infrastructure and executing the full verification cycle
+At least 9+ years of hands on experience
+Experience in development of UVM based verification environments from scratch
+Experience with Design verification of Data-center applications like Video, AI/ML and Networking designs
+Experience with revision control systems like Mercurial(Hg), Git or SVN
+Experience with verification of ARM/RISC-V based sub-systems or SoCs
+Experience with IP or integration verification of high-speed interfaces like PCIe, DDR, Ethernet
+Experience working across and building relationships with cross-functional design, model and emulation teams",N/A,N/A,https://rr.jobsyn.org/C7632FC62EE1453097DB54B360064EA610
+ASIC Engineer Design,"Bangalore, IND",Posted 142 days ago,Summary:,"Architecture exploration
+Micro-architecture development
+RTL development using Verilog, System Verilog and HLS
+Lint, CDC, Synthesis, & Power Optimization
+Soft and hard IP identification, selection and integration
+Collaboration with verification and emulation teams in test plan development and debug
+Collaboration with implementation team to close the design on timing and power
+At least 7+ years of silicon development experience
+Track record of first-pass success in ASIC Development
+Experience with Verilog or System Verilog
+Experience in one of these skills: Micro-architecture and RTL development for complex control and data path IPs, OR Experience in SoC Micro-architecture, Design and Integration, OR Implementation, Power methodology development
+Experience working across multiple projects
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+Experience in data path development
+Experience in CPU, NOC, Memory and Peripheral Subsystems
+Experience in HLS
+Experience with Synthesis, Timing Closure and Formal Verification Methodology
+Experience with Power Analysis and Optimization
+Experience with scripting languages (TCL, Python, Perl, Shell-scripting)",N/A,N/A,https://rr.jobsyn.org/813C7CE318F6405581A9ECFAC663C56A10
+Asic Design Engineering Manager,"Bangalore, IND",Posted 142 days ago,Summary:,"Manage an ASIC design team responsible for various processing blocks in a SOC. Drive RTL design planning and execution, innovative design methodology development, u-Arch, IP design and SOC integration. Participate in silicon architecture, interface with Architecture, SW/FW, Design, Modelling, Emulation, and Post-Silicon Validation teams
+Partner with internal and external cross-functional teams, across all levels of a corporation, from executives, team managers and individual contributors including development engineers, capacity planners and supply chain experts
+Contribute to and drive development of and maintain overall silicon strategy aligned to corporation's Long Range Plan objectives
+Collaborate with IP development teams, and participate in, and support soft and hard IP identification, selection and IP licensing
+Build, lead, and support a team of ASIC engineers through strategic hiring, training, and guidance to drive on-time and on-budget product delivery
+Contribute to, analyze, review SOWs from vendors, supporting documentation, requirements sets that meet the needs of internal customers
+Support engineering teams to define, debug, implement and deliver total solutions around purpose built ASICs
+Define, implement and maintain key performance indicators (KPI) for areas of responsibility
+Partner with technical program management and supply chain team members to manage external development partners, suppliers and vendors
+B.S. or M.S. degree in Computer Engineering or Electrical Engineering, relevant technical field, or equivalent practical experience
+12+ years experience in ASIC/SoC RTL design
+3+ years of experience as a People Manager
+Clear understanding of complexities involved with various RTL design tools, including Synopsys DC compiler, Cadence LEC, Spyglass.
+Track record of first-pass success in ASIC Development
+Experience working across multiple projects and adjusting priorities in partnership with stakeholders
+Experience with interpreting functional specs and creating comprehensive u-Arch
+Hands-on experience with complex subsystems like memory/LPDDR/HBM, cache, PCIE or Network on chip.
+In depth knowledge of at least one of these areas - NICs, signal processing algorithms, neural networks and machine learning concepts, and/or other neural network development framework",N/A,N/A,https://rr.jobsyn.org/041CB434F75742D9BE31491ACDA20CEA10
+"ASIC Engineer, Design Verification","Bangalore, IND",Posted 144 days ago,Summary:,"Define and implement IP/SoC verification plans, build verification test benches to enable IP/sub-system/SoC level verification
+Develop functional tests based on verification test plan
+Drive Design Verification to closure based on defined verification metrics on test plan, functional and code coverage
+Debug, root-cause and resolve functional failures in the design, partnering with the Design team
+Collaborate with cross-functional teams like Design, Model, Emulation and Silicon validation teams towards ensuring the highest design quality
+Develop and drive continuous Design Verification improvements using the latest verification methodologies, tools and technologies from the industry
+Track record of 'first-pass success' in ASIC development cycles
+Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience.
+14+ years of hands-on experience in SystemVerilog/UVM methodology and/or C/C++ based verification
+14+ years experience in IP/sub-system and/or SoC level verification based on SystemVerilog UVM/OVM based methodologies
+Experience in one or more of the following areas along with functional verification - SV Assertions, Formal, Emulation
+Experience in EDA tools and scripting (Python, TCL, Perl, Shell) used to build tools and flows for verification environments
+Experience in architecting and implementing Design Verification infrastructure and executing the full verification cycle
+Experience in development of UVM based verification environments from scratch
+Experience with Design verification of Data-center applications like Video, AI/ML and Networking designs
+Experience with revision control systems like Mercurial(Hg), Git or SVN
+Experience with verification of ARM/RISC-V based sub-systems or SoCs
+Experience with IP or integration verification of high-speed interfaces like PCIe, DDR, Ethernet
+Experience working across and building relationships with cross-functional design, model and emulation teams",N/A,N/A,https://rr.jobsyn.org/753E470B045D4B4487EC3EEED3D9C2AD10
+Design Verification Engineering Manager,"Bangalore, IND",Posted 150 days ago,Summary:,"Manage an ASIC design verification team responsible for various processing blocks in a SOC. Drive verification planning and execution, innovative verification methodology development, functional and code coverage closure. Participate in silicon architecture, micro-architecture development, interface with Architecture, SW/FW, Design, Modeling, Emulation, and Post-Silicon Validation teams
+Partner with internal and external cross-functional teams, across all levels of a corporation, from executives, team managers and individual contributors including development engineers, capacity planners and supply chain experts
+Contribute to and drive development of and maintain overall silicon strategy aligned to corporation's Long Range Plan objectives
+Collaborate with IP development teams, and participate in, and support soft and hard IP identification, selection and IP licensing
+Build, lead, and support a team of ASIC engineers through strategic hiring, training, and guidance to drive on-time and on-budget product delivery
+Contribute to, analyze, review SOWs from vendors, supporting documentation, requirements sets that meet the needs of internal customers
+Support engineering teams to define, debug, implement and deliver total solutions around purpose built ASICs
+Define, implement and maintain key performance indicators (KPI) for areas of responsibility
+Partner with technical program management and supply chain team members to manage external development partners, suppliers and vendors
+B.S. or M.S. degree in Computer Engineering or Electrical Engineering, relevant technical field, or equivalent practical experience
+12+ years experience in ASIC/SoC design verification
+3+ years of experience as a People Manager
+Clear understanding of complexities involved with various design verification tools, including Synopsys VCS or Cadence Xcelium Simulator, Verdi, JasperGold or VC Formal
+Track record of first-pass success in ASIC Development
+Experience working across multiple projects and adjusting priorities in partnership with stakeholders
+Experience managing and delivering UVM constrained random test benches
+Experience with interpreting functional specs and creating comprehensive test plan
+Hands-on experience with complex subsystems like memory/LPDDR/HBM, cache, PCIE or Network on chip including performance verification
+In depth knowledge of at least one of these areas - video coding standards, signal processing algorithms, neural networks and machine learning concepts, and/or other neural network development framework
+Experience in formal verification techniques and methodologies",N/A,N/A,https://rr.jobsyn.org/8A548484528A4F9689CD18E8656FE62110
+"Marketing Science Partner, India","Gurgaon, IND",Posted 174 days ago,Summary:,"Engage with clients and agencies to share research-based best practices and measure true business value by building and operationalizing “learning agendas”. The best practices and learning agendas will highlights how a client can improve business outcomes
+Work with advertising and industry bodies to create best in class measurement solutions
+Partner closely with sales to manage a set of accounts and prioritize which clients will get servicing from the team
+Support client engagement with third party vendors responsible for setting up and conducting measurement studies
+Drive client, vertical, and industry adoption of preferred measurement methodologies, best practices, products, and approaches in support of the “learning agenda”
+Design tests to showcase the power of good measurement using client data and Facebook or third-party technology tools
+Conduct in-depth standard and custom ad effectiveness studies for Facebook advertisers to understand the relative impact of different marketing strategies across digital platforms and across media
+Communicate complex research results to a general audience
+Offer selective consultation with clients & agencies on business hypothesis to test, measurement design & feasibility or insights interpretation
+Operate internal & external education & training workshops to raise awareness & advocacy of Measurement solutions & analytical best practices (auction, use of lift tools…)
+Bachelor’s degree in Business, Statistics, Data Science, Economics, Mathematics, Computer Science, Engineering, Sociology or similar
+Direct experience independently scoping and executing research projects with clients and or cross-functional stakeholders
+Experience analyzing and manipulating data sets to understand patterns and provide insights
+Experience leading at an industry level and with clients
+Ability to communicate technical content to general audience.
+Client-facing experience (internal or external), including ability to drive meetings or change through adoption of new products or research methods.
+Experience with digital advertising measurement methods and technologies
+Proven excellence in working with structured and unstructured data-sets, statistical software such as R as well as data extraction tools such as Hive, python and/or SQL is a must
+Experience with field experiments, experimental design, survey sampling, and/or panel data
+Advanced degree in a quantitative field or an MBA",N/A,N/A,https://rr.jobsyn.org/2B340525A6094C53B013BD0D6B5A407110
+"Marketing Science Partner, India","Bangalore, IND",Posted 174 days ago,Summary:,"Engage with clients and agencies to share research-based best practices and measure true business value by building and operationalizing “learning agendas”. The best practices and learning agendas will highlights how a client can improve business outcomes
+Work with advertising and industry bodies to create best in class measurement solutions
+Partner closely with sales to manage a set of accounts and prioritize which clients will get servicing from the team
+Support client engagement with third party vendors responsible for setting up and conducting measurement studies
+Drive client, vertical, and industry adoption of preferred measurement methodologies, best practices, products, and approaches in support of the “learning agenda”
+Design tests to showcase the power of good measurement using client data and Facebook or third-party technology tools
+Conduct in-depth standard and custom ad effectiveness studies for Facebook advertisers to understand the relative impact of different marketing strategies across digital platforms and across media
+Communicate complex research results to a general audience
+Offer selective consultation with clients & agencies on business hypothesis to test, measurement design & feasibility or insights interpretation
+Operate internal & external education & training workshops to raise awareness & advocacy of Measurement solutions & analytical best practices (auction, use of lift tools…)
+Bachelor’s degree in Business, Statistics, Data Science, Economics, Mathematics, Computer Science, Engineering, Sociology or similar
+Direct experience independently scoping and executing research projects with clients and or cross-functional stakeholders
+Experience analyzing and manipulating data sets to understand patterns and provide insights
+Experience leading at an industry level and with clients
+Ability to communicate technical content to general audience.
+Client-facing experience (internal or external), including ability to drive meetings or change through adoption of new products or research methods.
+Experience with digital advertising measurement methods and technologies
+Proven excellence in working with structured and unstructured data-sets, statistical software such as R as well as data extraction tools such as Hive, python and/or SQL is a must
+Experience with field experiments, experimental design, survey sampling, and/or panel data
+Advanced degree in a quantitative field or an MBA",N/A,N/A,https://rr.jobsyn.org/45E299EAAD714B8A83DAD51F2CCA6A8C10
+"Marketing Science Partner, India","Mumbai, IND",Posted 174 days ago,Summary:,"Engage with clients and agencies to share research-based best practices and measure true business value by building and operationalizing “learning agendas”. The best practices and learning agendas will highlights how a client can improve business outcomes
+Work with advertising and industry bodies to create best in class measurement solutions
+Partner closely with sales to manage a set of accounts and prioritize which clients will get servicing from the team
+Support client engagement with third party vendors responsible for setting up and conducting measurement studies
+Drive client, vertical, and industry adoption of preferred measurement methodologies, best practices, products, and approaches in support of the “learning agenda”
+Design tests to showcase the power of good measurement using client data and Facebook or third-party technology tools
+Conduct in-depth standard and custom ad effectiveness studies for Facebook advertisers to understand the relative impact of different marketing strategies across digital platforms and across media
+Communicate complex research results to a general audience
+Offer selective consultation with clients & agencies on business hypothesis to test, measurement design & feasibility or insights interpretation
+Operate internal & external education & training workshops to raise awareness & advocacy of Measurement solutions & analytical best practices (auction, use of lift tools…)
+Bachelor’s degree in Business, Statistics, Data Science, Economics, Mathematics, Computer Science, Engineering, Sociology or similar
+Direct experience independently scoping and executing research projects with clients and or cross-functional stakeholders
+Experience analyzing and manipulating data sets to understand patterns and provide insights
+Experience leading at an industry level and with clients
+Ability to communicate technical content to general audience.
+Client-facing experience (internal or external), including ability to drive meetings or change through adoption of new products or research methods.
+Experience with digital advertising measurement methods and technologies
+Proven excellence in working with structured and unstructured data-sets, statistical software such as R as well as data extraction tools such as Hive, python and/or SQL is a must
+Experience with field experiments, experimental design, survey sampling, and/or panel data
+Advanced degree in a quantitative field or an MBA",N/A,N/A,https://rr.jobsyn.org/4986133401A348238006CA63E6F50CCC10

@@ -13,9 +13,9 @@ import base64
 from urllib.parse import quote
 import json
 
-# Set page config
-st.set_page_config(page_title="Job Market Analysis Dashboard", layout="wide", initial_sidebar_state="expanded")
-
+# Only set page config when this file is run directly, not when imported
+if __name__ == "__main__":
+    st.set_page_config(page_title="Job Market Analysis Dashboard", layout="wide", initial_sidebar_state="expanded")
 # Add custom CSS for better UI
 st.markdown("""
 <style>
