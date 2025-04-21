@@ -85,6 +85,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# pd.set_option('future.no_silent_downcasting', True)
+
 # Error handling decorators
 def handle_exceptions(func):
     """Decorator to handle exceptions in function execution"""
@@ -128,22 +130,142 @@ def extract_job_category(title):
     
     title = title.lower()
     
-    # Define job categories with related keywords - expanded for more depth
+    # Define job categories with related keywords - expanded for more comprehensive coverage
     categories = {
-        "Software Engineering": ["software engineer", "swe", "developer", "programming", "coder", "full stack", "frontend", "backend", "mobile dev", "web developer"],
-        "Hardware Engineering": ["hardware engineer", "hardware design", "electronics", "electrical engineer", "circuit", "pcb"],
-        "Data Science": ["data scientist", "data analyst", "machine learning", "ml engineer", "ai", "analytics", "statistician", "big data"],
-        "DevOps": ["devops", "site reliability", "sre", "infrastructure", "platform engineer", "cloud engineer", "operations engineer"],
-        "QA & Testing": ["qa", "test", "quality assurance", "quality engineer", "tester", "test automation"],
-        "Product Management": ["product manager", "product owner", "program manager", "project manager", "technical program manager"],
-        "UX/UI Design": ["ux", "ui", "user experience", "user interface", "designer", "design", "creative"],
-        "Business & Sales": ["business", "sales", "account", "client", "customer", "marketing", "growth", "advocacy"],
-        "Support & Operations": ["support", "specialist", "operations", "expert", "technician", "service", "customer support"],
-        "Management": ["manager", "management", "lead", "director", "head of", "chief", "vp"],
-        "Security": ["security", "infosec", "cyber", "penetration tester", "ethical hacker", "compliance", "risk"],
+        "Software Engineering": ["software engineer", "sde", "dev", "developer", "programming", "coder", "full stack", 
+                               "frontend", "front-end", "front end", "backend", "back-end", "back end", 
+                               "mobile dev", "web developer", "software development", "application developer", 
+                               "java developer", "python developer", "javascript developer", "react developer", 
+                               "node developer", "angular developer", "vue developer", "net developer", ".net developer",
+                               "php developer", "ruby developer", "ios developer", "android developer", "mobile developer",
+                               "software programmer", "programmer", "coding", "software architect", "solutions architect", "technology consulting"],
+        
+        "Hardware Engineering": ["hardware engineer", "hardware design", "electronics", "electrical engineer", 
+                               "circuit", "pcb", "fpga", "asic", "embedded systems", "embedded engineer", 
+                               "hardware architecture", "chip design", "vlsi", "hardware testing", "hardware development",
+                               "electrical design", "rf engineer", "semiconductor", "microcontroller", "power electronics"],
+        
+        "Data Science": ["data scientist", "data analyst", "machine learning", "ml engineer", "ai", "analytics", 
+                        "statistician", "big data", "data mining", "predictive modeling", "data science", 
+                        "business intelligence", "bi developer", "bi analyst", "statistics", "statistical", 
+                        "deep learning", "nlp", "natural language", "computer vision", "data engineering",
+                        "data architect", "data warehouse", "data modeling", "ai engineer", "ai research"],
+        
+        "DevOps": ["devops", "site reliability", "sre", "infrastructure", "platform engineer", "cloud engineer", 
+                 "operations engineer", "ci/cd", "continuous integration", "continuous deployment", "kubernetes", 
+                 "docker", "containerization", "aws engineer", "azure engineer", "gcp engineer", "cloud architect",
+                 "devops architect", "systems engineer", "automation engineer", "release engineer", "build engineer",
+                 "configuration management", "infrastructure automation", "terraform", "ansible", "jenkins"],
+        
+        "QA & Testing": ["qa", "test", "quality assurance", "quality engineer", "tester", "test automation", 
+                        "quality analyst", "sdet", "test engineer", "automated testing", "manual testing", 
+                        "software testing", "qa automation", "quality control", "integration testing", 
+                        "performance testing", "security testing", "regression testing", "qa lead", "test lead",
+                        "test analyst", "test manager", "qa manager", "test case", "test plan"],
+        
+        "Product Management": ["product manager", "product owner", "program manager", "project manager", 
+                             "technical program manager", "product development", "product strategy", "product marketing",
+                             "product analyst", "technical product manager", "associate product manager",
+                             "senior product manager", "product lead", "product director", "product management",
+                             "product specialist", "agile product", "scrum product owner", "product operations"],
+        
+        "UX/UI Design": ["ux", "ui", "user experience", "user interface", "designer", "design", "creative",
+                        "ux designer", "ui designer", "product designer", "interaction designer", "web designer",
+                        "visual designer", "graphic designer", "ux researcher", "user researcher", "information architect",
+                        "usability", "wireframe", "prototyping", "ux/ui", "ux ui", "ux lead", "design lead",
+                        "design director", "creative director", "art director", "design systems"],
+        
+        "Business & Sales": ["business", "sales", "account","consultant", "client", "customer", "marketing", "growth", "advocacy",
+                           "business development", "account executive", "account manager", "sales representative",
+                           "sales manager", "business analyst", "marketing manager", "digital marketing",
+                           "content marketing", "seo", "sem", "social media", "brand manager", "market research",
+                           "customer success", "client manager", "business operations", "revenue operations"],
+        
+        "Support & Operations": ["support", "specialist", "operations", "expert", "technician", "service", 
+                               "customer support", "technical support", "help desk", "service desk", "it support",
+                               "operations analyst", "operations manager", "systems administrator", "sysadmin",
+                               "network administrator", "it operations", "database administrator", "dba",
+                               "support engineer", "system engineer", "desktop support", "help desk manager",
+                               "service delivery", "customer care", "customer service", "customer experience"],
+        
+        "Management": ["manager", "management", "lead", "director", "head of", "chief", "vp", "vice president",
+                      "executive", "c-level", "senior manager", "team lead", "tech lead", "engineering manager",
+                      "development manager", "senior director", "vp of", "cto", "cio", "ceo", "founder",
+                      "co-founder", "head", "leader", "executive director", "managing director", "general manager"],
+        
+        "Security": ["security", "infosec", "cyber", "penetration tester", "ethical hacker", "compliance", "risk",
+                    "security engineer", "cybersecurity", "information security", "security analyst", "security architect",
+                    "application security", "network security", "security operations", "soc analyst", "security consultant",
+                    "security administrator", "security auditor", "grc", "governance", "identity management",
+                    "access management", "security researcher", "threat analyst", "vulnerability analyst"],
+        
+        "Data Engineering": ["data engineer", "etl", "data pipeline", "database engineer", "big data engineer", 
+                           "data infrastructure", "data platform", "etl developer", "data warehousing", 
+                           "database developer", "data integration", "hadoop", "spark", "data lake", 
+                           "data streaming", "data modeling", "data architecture", "snowflake", "redshift"],
+        
+        "Machine Learning": ["machine learning engineer", "ml ops", "ml engineer", "ai engineer", "deep learning engineer",
+                           "computer vision engineer", "nlp engineer", "ml researcher", "ai researcher",
+                           "research scientist", "machine learning scientist", "deep learning scientist", 
+                           "reinforcement learning", "neural networks", "ml developer", "ml architect"],
+        
+        "Cloud Computing": ["cloud", "cloud architect", "cloud developer", "aws", "azure", "gcp", "oracle", "sap", "cloud administrator",
+                          "cloud security", "cloud consultant", "multi-cloud", "hybrid cloud", "saas", 
+                          "iaas", "paas", "cloud migration", "cloud solutions", "cloud native", "serverless"],
+        
+        "Mobile Development": ["ios", "android", "mobile application", "app developer", "mobile app", "swift developer",
+                             "kotlin developer", "react native", "flutter", "mobile ui", "mobile ux", 
+                             "hybrid app", "mobile architect", "mobile lead", "app designer"],
+        
+        "Frontend Development": ["frontend", "front-end", "front end", "ui developer", "react", "angular", "vue",
+                               "javascript", "typescript", "html", "css", "web frontend", "frontend architect",
+                               "ui engineer", "client-side", "responsive design", "progressive web app"],
+        
+        "Backend Development": ["backend", "back-end", "back end", "api", "server-side", "java", "python", "c#",
+                              "nodejs", "ruby", "php", "golang", "scala", "microservices", "rest api",
+                              "graphql", "backend architect", "services developer", "middleware"],
+        
+        "Full Stack Development": ["full stack", "full-stack", "fullstack", "front and back", "end-to-end",
+                                 "client and server", "full stack architect", "web stack", "mern", "mean",
+                                 "lamp", "web application", "web development", "web services"],
+        
+        "Human Resources": ["hr", "human resources", "recruiter", "talent acquisition", "people operations", 
+                   "talent manager", "hr specialist", "hr coordinator", "hr generalist", "hr business partner", 
+                   "hrbp", "recruiting", "recruitment", "talent", "hiring", "onboarding", "benefits", 
+                   "compensation", "learning development", "l&d", "employee relations", "hr manager", 
+                   "talent development", "people manager", "hr director", "chief human resources", 
+                   "chro", "payroll", "workforce", "hr analyst", "diversity", "dei", "people analytics"],
+
+        "Product & Project Management": ["product manager", "product owner", "program manager", "project manager", 
+                             "technical program manager", "product development", "product strategy", "product marketing",
+                             "product analyst", "technical product manager", "associate product manager",
+                             "senior product manager", "product lead", "product director", "product management",
+                             "product specialist", "agile product", "scrum product owner", "product operations",
+                             "project lead", "project coordinator", "project specialist", "project director",
+                             "project administrator", "project analyst", "project planner", "project scheduler",
+                             "scrum master", "agile coach", "delivery manager", "delivery lead", "pmo",
+                             "project management office", "project portfolio", "project management professional",
+                             "pmp", "prince2", "kanban", "sprint planning", "release planning", "roadmap",
+                             "project lifecycle", "project delivery", "project governance"],
+
+        "Intern" : ["intern", "internship"]
     }
+
     
     for category, keywords in categories.items():
+        if any(keyword in title.lower() for keyword in keywords):
+            return category
+    
+    # Secondary pass - check for broader terms if no specific match
+    broader_matches = {
+        "Software Engineering": ["engineer software", "code", "engineer", "software", "web", "app", "api", "build", "development"],
+        "Data Science": ["data", "analyst", "insights", "report"],
+        "Management": ["staff", "senior", "sr", "principal", "leadership"],
+        "Business & Sales": ["market", "growth", "revenue", "sell", "business"],
+        "Support & Operations": ["admin", "help", "assistant", "coordinator"]
+    }
+    
+    for category, keywords in broader_matches.items():
         if any(keyword in title.lower() for keyword in keywords):
             return category
     
@@ -159,43 +281,101 @@ def extract_subcategory(title, category):
     # Define subcategories for each main category
     subcategories = {
         "Software Engineering": {
-            "Frontend": ["frontend", "front end", "front-end", "ui", "react", "angular", "vue", "javascript", "web developer"],
-            "Backend": ["backend", "back end", "back-end", "server", "api", "database", "java", "python", "node", "php", "ruby", "go"],
-            "Full Stack": ["full stack", "full-stack", "fullstack"],
-            "Mobile": ["ios", "android", "mobile", "app developer", "swift", "kotlin", "react native", "flutter"],
-            "Embedded": ["embedded", "firmware", "low level", "kernel", "driver", "rtos"],
-            "Cloud": ["cloud", "aws", "azure", "gcp", "serverless"],
+            "Frontend": ["frontend", "front end", "front-end", "ui", "react", "angular", "vue", "javascript", "web developer", "html", "css", "ui developer"],
+            "Backend": ["backend", "back end", "back-end", "server", "api", "database", "java", "python", "node", "php", "ruby", "go", "c#", ".net", "rest", "microservices"],
+            "Full Stack": ["full stack", "full-stack", "fullstack", "end-to-end", "front and back"],
+            "Mobile": ["ios", "android", "mobile", "app developer", "swift", "kotlin", "react native", "flutter", "mobile app"],
+            "Gaming": ["game", "unity", "unreal", "gameplay", "game engine", "3d", "gaming"],
+            "Embedded": ["embedded", "firmware", "low level", "kernel", "driver", "rtos", "iot", "embedded linux"],
+            "Cloud": ["cloud", "aws", "azure", "gcp", "serverless", "lambda", "cloud native", "saas"],
+            "Web": ["web developer", "web application", "website", "web services", "web designer"],
+            "Systems": ["systems", "system developer", "low-level", "c++", "performance", "optimization"],
         },
+        
         "Data Science": {
-            "Machine Learning": ["machine learning", "ml", "deep learning", "neural", "nlp", "computer vision", "ai"],
-            "Data Analysis": ["data analyst", "analytics", "bi ", "business intelligence", "tableau", "power bi", "looker"],
-            "Data Engineering": ["data engineer", "etl", "data pipeline", "hadoop", "spark", "kafka"],
+            "Machine Learning": ["machine learning", "ml", "deep learning", "neural", "nlp", "computer vision", "ai", "tensorflow", "pytorch", "model", "algorithm"],
+            "Data Analysis": ["data analyst", "analytics", "bi ", "business intelligence", "tableau", "power bi", "looker", "excel", "sql", "dashboards", "reporting"],
+            "Data Engineering": ["data engineer", "etl", "data pipeline", "hadoop", "spark", "kafka", "data warehouse", "big data"],
+            "Research Scientist": ["research", "scientist", "phd", "papers", "algorithms", "r&d", "innovation"],
+            "Business Analytics": ["business analytics", "business analyst", "market intelligence", "customer analytics"],
         },
+        
         "DevOps": {
-            "SRE": ["site reliability", "sre", "reliability"],
-            "Platform Engineering": ["platform", "infrastructure"],
-            "Cloud Operations": ["cloud", "aws", "azure", "gcp", "devops"],
+            "SRE": ["site reliability", "sre", "reliability", "uptime", "availability"],
+            "Platform Engineering": ["platform", "infrastructure", "infra", "iac", "terraform", "cloudformation"],
+            "Cloud Operations": ["cloud", "aws", "azure", "gcp", "devops", "cloud engineer", "cloud architect"],
+            "CI/CD": ["ci/cd", "cicd", "continuous integration", "continuous deployment", "jenkins", "gitlab"],
+            "Systems Administration": ["sysadmin", "systems administrator", "linux admin", "windows admin", "unix"],
         },
+        
         "QA & Testing": {
-            "Manual Testing": ["manual test", "manual qa"],
-            "Automation Testing": ["automation", "automated", "selenium", "cypress", "test automation"],
-            "Security Testing": ["security test", "penetration", "pen test"]
+            "Manual Testing": ["manual test", "manual qa", "test cases", "test plan", "quality control"],
+            "Automation Testing": ["automation", "automated", "selenium", "cypress", "test automation", "automation framework"],
+            "Security Testing": ["security test", "penetration", "pen test", "security validation"],
+            "Performance Testing": ["performance", "load", "stress", "jmeter", "gatling", "performance engineer"],
+            "QA Leadership": ["qa lead", "test lead", "qa manager", "test manager", "quality director"],
         },
+        
         "Security": {
-            "Application Security": ["application security", "appsec", "secure coding"],
-            "Network Security": ["network security", "firewall", "vpn"],
-            "Security Operations": ["soc", "security operations", "incident response"]
+            "Application Security": ["application security", "appsec", "secure coding", "security engineer"],
+            "Network Security": ["network security", "firewall", "vpn", "network engineer", "security infrastructure"],
+            "Security Operations": ["soc", "security operations", "incident response", "threat hunting", "security monitoring"],
+            "Penetration Testing": ["penetration", "pen test", "ethical hack", "red team", "offensive security"],
+            "Security Architecture": ["security architect", "security architecture", "security design", "enterprise security"],
+            "GRC": ["governance", "risk", "compliance", "audit", "policy", "regulatory", "standards"],
         },
+        
         "Product Management": {
-            "Technical PM": ["technical product", "tpm", "technical program"],
-            "Growth PM": ["growth", "user acquisition"],
-            "Core PM": ["core product"]
+            "Technical PM": ["technical product", "tpm", "technical program", "engineering product"],
+            "Growth PM": ["growth", "user acquisition", "conversion", "engagement", "retention"],
+            "Core PM": ["core product", "product strategy", "roadmap", "discovery", "feature definition"],
+            "Platform PM": ["platform product", "api product", "infrastructure product", "developer experience"],
+            "Product Marketing": ["product marketing", "go-to-market", "gtm", "product launch", "market research"],
         },
+        
         "UX/UI Design": {
-            "UX Research": ["ux research", "user research", "usability"],
-            "UI Design": ["ui design", "interface design", "visual design"],
-            "Interaction Design": ["interaction", "ixd", "motion"]
-        }
+            "UX Research": ["ux research", "user research", "usability", "interviews", "testing", "surveys"],
+            "UI Design": ["ui design", "interface design", "visual design", "graphic design", "web design"],
+            "Interaction Design": ["interaction", "ixd", "motion", "animations", "microinteractions"],
+            "Service Design": ["service design", "customer journey", "experience design", "design strategy"],
+            "Design Systems": ["design system", "component library", "style guide", "design ops"],
+        },
+        
+        "Mobile Development": {
+            "iOS": ["ios", "swift", "objective-c", "iphone", "ipad", "apple", "xcode"],
+            "Android": ["android", "kotlin", "java android", "android studio", "google play"],
+            "Cross-platform": ["react native", "flutter", "xamarin", "cross platform", "hybrid", "cordova", "ionic"],
+            "Mobile Architecture": ["mobile architect", "app architecture", "mobile lead"],
+        },
+        
+        "Data Engineering": {
+            "ETL": ["etl", "extract transform load", "data integration", "pentaho", "informatica"],
+            "Big Data": ["big data", "hadoop", "spark", "hive", "pig", "hdfs", "yarn"],
+            "Data Streaming": ["kafka", "streaming", "real-time", "kinesis", "pub/sub", "event"],
+            "Data Warehousing": ["data warehouse", "warehouse", "snowflake", "redshift", "bigquery", "synapse"],
+        },
+        
+        "Management": {
+            "Engineering Management": ["engineering manager", "dev manager", "team lead", "tech lead"],
+            "Executive": ["director", "vp", "chief", "cto", "cio", "head of", "executive"],
+            "Project Management": ["project manager", "program manager", "scrum master", "agile coach"],
+            "People Management": ["people manager", "hr", "talent", "career development", "performance"],
+        },
+        
+        "Cloud Computing": {
+            "AWS": ["aws", "amazon web services", "ec2", "s3", "lambda", "cloudformation"],
+            "Azure": ["azure", "microsoft cloud", "azure functions", "app service"],
+            "GCP": ["gcp", "google cloud", "google cloud platform", "gke", "app engine"],
+            "Multi-cloud": ["multi-cloud", "hybrid cloud", "cloud agnostic", "multi cloud strategy"],
+        },
+        
+        "Business & Sales": {
+            "Sales": ["sales", "account executive", "business development", "revenue"],
+            "Marketing": ["marketing", "seo", "sem", "content", "social media", "brand"],
+            "Customer Success": ["customer success", "account manager", "customer relationship"],
+            "Operations": ["business operations", "revenue operations", "sales operations"],
+            "Analytics": ["business analyst", "data analyst", "business intelligence"],
+        },
     }
     
     if category in subcategories:
@@ -252,73 +432,130 @@ def extract_skills(text):
     if not isinstance(text, str):
         return []
     
-    # Expanded list of technical skills to look for
+    # Expanded and categorized list of technical skills to look for
     skill_patterns = [
         # Programming Languages
         r'\bjava\b', r'\bpython\b', r'\bc\+\+\b', r'\bc#\b', r'\bruby\b', r'\brust\b', 
         r'\bgo\b', r'\bgolang\b', r'\bscala\b', r'\bphp\b', r'\bperl\b', r'\bswift\b',
         r'\bkotlin\b', r'\btypescript\b', r'\bhaskell\b', r'\berlang\b', r'\belixir\b',
-        r'\bluа\b', r'\bobjective-c\b', r'\bgroovy\b', r'\bdart\b', r'\bfortran\b',
+        r'\blua\b', r'\bobjective-c\b', r'\bgroovy\b', r'\bdart\b', r'\bfortran\b',
+        r'\bclojure\b', r'\bcobol\b', r'\blisp\b', r'\bmatlab\b', r'\br\b', r'\basm\b',
+        r'\bassembly\b', r'\bsolidity\b', r'\bpowershell\b', r'\bbash\b', r'\bshell\b',
         
         # Front-end
         r'\bjavascript\b', r'\bjs\b', r'\breact\b', r'\bangular\b', r'\bvue\b', r'\bsvelte\b',
         r'\bhtml5?\b', r'\bcss3?\b', r'\bsass\b', r'\bless\b', r'\bwebpack\b', r'\bvite\b',
         r'\bgulp\b', r'\bember\b', r'\bjquery\b', r'\bdom\b', r'\bbootstrap\b', r'\btailwind\b',
+        r'\bnext\.?js\b', r'\bnuxt\.?js\b', r'\bswr\b', r'\bwebsockets\b', r'\bpwa\b',
+        r'\breact native\b', r'\bstorybook\b', r'\bwebgl\b', r'\bthree\.?js\b', r'\bd3\.?js\b',
+        r'\bresponsive design\b', r'\banimation\b', r'\bweb components\b', r'\bgraphics\b',
         
         # Back-end
         r'\bnode\.?js\b', r'\bexpress\b', r'\bdjango\b', r'\bflask\b', r'\brails\b',
         r'\bspring\b', r'\bhibernate\b', r'\blaravel\b', r'\b\.net\b', r'\basp\.net\b',
+        r'\bfastapi\b', r'\bplay framework\b', r'\bquarkus\b', r'\bmicronaut\b', r'\bvertx\b',
+        r'\bpython flask\b', r'\bsanic\b', r'\btornado\b', r'\bsymfony\b', r'\bzend\b',
+        r'\bcakephp\b', r'\bcodeigniter\b', r'\bspring boot\b', r'\bmvc\b', r'\bmvvm\b',
         
-        # Cloud
+        # Cloud & DevOps
         r'\baws\b', r'\bazure\b', r'\bgcp\b', r'\bcloud\b', r'\bgoogle cloud\b', r'\bs3\b',
         r'\blambda\b', r'\bec2\b', r'\beks\b', r'\baks\b', r'\bgke\b', r'\brds\b',
-        r'\bdynamodb\b', r'\bcosmos db\b', r'\bfirebase\b',
-        
-        # DevOps/Infra
+        r'\bdynamodb\b', r'\bcosmos db\b', r'\bfirebase\b', r'\bserverless\b', r'\bcdk\b',
         r'\bdocker\b', r'\bkubernetes\b', r'\bk8s\b', r'\bterraform\b', r'\bansible\b',
         r'\bchef\b', r'\bpuppet\b', r'\bcircleci\b', r'\bjenkins\b', r'\bgithub actions\b',
-        r'\btravic ci\b', r'\bargo\b', r'\bflux\b', r'\bhelm\b', r'\bvagrant\b',
+        r'\btravis ci\b', r'\bargo\b', r'\bflux\b', r'\bhelm\b', r'\bvagrant\b',
+        r'\bcloudformation\b', r'\bpulumi\b', r'\bauto scaling\b', r'\bload balancing\b',
+        r'\binfrastructure as code\b', r'\biam\b', r'\bsecurity groups\b', r'\bfargaste\b',
+        r'\bcloudfrontb\b', r'\bcache\b', r'\bedge computing\b', r'\bmicroservices\b',
         
         # Databases
         r'\bsql\b', r'\bnosql\b', r'\bmongodb\b', r'\bcassandra\b', r'\belasticsearch\b',
-        r'\bmysql\b', r'\bpostgres\b', r'\boracle\b', r'\bsqlite\b', r'\bredis\b',
+        r'\bmysql\b', r'\bpostgres\b', r'\bpostgresql\b', r'\boracle\b', r'\bsqlite\b', r'\bredis\b',
         r'\bcouchbase\b', r'\bneo4j\b', r'\bgraphql\b', r'\bbigtable\b', r'\binfluxdb\b',
+        r'\bmariadb\b', r'\bdynamodb\b', r'\bcosmosdb\b', r'\bfirestore\b', r'\btimeseriesdb\b',
+        r'\bcockroachdb\b', r'\bsolr\b', r'\bspark sql\b', r'\bms sql\b', r'\bsql server\b',
+        r'\boldatabase design\b', r'\borm\b', r'\bdata modeling\b', r'\bquery optimization\b',
         
         # OS and Platform
         r'\blinux\b', r'\bunix\b', r'\bwindows\b', r'\bmac\b', r'\bios\b', r'\bandroid\b',
         r'\bubuntu\b', r'\bcentos\b', r'\bredhat\b', r'\bdebian\b', r'\bfedora\b',
+        r'\bkali\b', r'\barch\b', r'\bvirtualization\b', r'\bvmware\b', r'\bhyper-v\b',
+        r'\bcontainerization\b', r'\bcgroups\b', r'\bnamespaces\b', r'\bwindows server\b',
         
         # Data Science & AI
         r'\bml\b', r'\bmachine learning\b', r'\bai\b', r'\bartificial intelligence\b', 
         r'\bdata science\b', r'\bpandas\b', r'\bnumpy\b', r'\bscikit-learn\b', r'\btensorflow\b',
         r'\bpytorch\b', r'\bkeras\b', r'\bcv\b', r'\bcomputer vision\b', r'\bnlp\b',
         r'\bnatural language processing\b', r'\br language\b', r'\bjupyter\b', r'\bscipy\b',
-        r'\bmxnet\b', r'\bcaffe\b', r'\btheano\b', r'\btorch\b',
+        r'\bmxnet\b', r'\bcaffe\b', r'\btheano\b', r'\btorch\b', r'\bhugging face\b',
+        r'\bopenai\b', r'\bgpt\b', r'\bllm\b', r'\blarge language model\b', r'\brage model\b',
+        r'\bgenerative ai\b', r'\bstatistics\b', r'\bregression\b', r'\bclassification\b',
+        r'\bclustering\b', r'\breinforcement learning\b', r'\bdeep learning\b', 
+        r'\bneural networks\b', r'\bcnn\b', r'\brnn\b', r'\blstm\b', r'\bgan\b', 
+        r'\btransformers\b', r'\bbert\b', r'\bgpt-3\b', r'\bgpt-4\b', r'\bdiffusion models\b',
+        r'\bstable diffusion\b', r'\bopenai api\b', r'\bazure openai\b', r'\bdata lake\b',
+        r'\bdata warehouse\b', r'\bretrieval augmented generation\b', r'\brag\b',
         
         # Big Data
         r'\bspark\b', r'\bhadoop\b', r'\bbig data\b', r'\betl\b', r'\bhive\b', r'\bpig\b',
         r'\bkafka\b', r'\bflume\b', r'\bzookeeper\b', r'\bflink\b', r'\bavro\b', r'\bparquet\b',
+        r'\bdatabricks\b', r'\bevent streaming\b', r'\bdbt\b', r'\bairflow\b', r'\bkinesis\b',
+        r'\bpubsub\b', r'\bstorm\b', r'\brabbitmq\b', r'\bnifi\b', r'\bbeam\b', r'\bsamza\b',
+        r'\bsqoop\b', r'\bdataflow\b', r'\breal-time analytics\b', r'\bdashboarding\b', 
+        r'\bbatch processing\b', r'\bstream processing\b',
         
         # Testing
         r'\btest automation\b', r'\bselenium\b', r'\bjunit\b', r'\bmockito\b', r'\bject\b',
         r'\btest-driven\b', r'\btdd\b', r'\bbdd\b', r'\bcucumber\b', r'\bjest\b', r'\bmocha\b',
         r'\bjavascript testing\b', r'\bqunit\b', r'\bcypress\b', r'\bprotractor\b', r'\bwebdriver\b',
+        r'\buitesting\b', r'\bautomation\b', r'\ba/b testing\b', r'\bload testing\b', 
+        r'\bperformance testing\b', r'\bgatling\b', r'\bjmeter\b', r'\bxctest\b', r'\bespresso\b',
+        r'\bappium\b', r'\bplay\b', r'\bmock\b', r'\bstub\b', r'\bfake\b', r'\brobotframework\b',
         
-        # API
+        # API & Web Services
         r'\brest\b', r'\bapi\b', r'\bsoap\b', r'\bopenapi\b', r'\bswagger\b', r'\bgraphql\b',
         r'\bhttp\b', r'\bjson\b', r'\bxml\b', r'\bprotobuf\b', r'\bgrpc\b', r'\bwebhooks\b',
+        r'\bpost api\b', r'\bapi development\b', r'\bweb services\b', r'\bmicroservices\b',
+        r'\bapiarchitecture\b', r'\bapidoc\b', r'\bapi gateway\b', r'\bapi security\b',
+        r'\bauthentication\b', r'\bauthorization\b', r'\boauth\b', r'\bjwt\b', r'\bsaml\b',
         
         # Methodologies
         r'\bscrum\b', r'\bagile\b', r'\bkanban\b', r'\bwaterfall\b', r'\blean\b', r'\bsafe\b',
         r'\bdevops\b', r'\bci/cd\b', r'\bcontinuous integration\b', r'\bcontinuous delivery\b',
+        r'\bdevops\b', r'\bdesign thinking\b', r'\bspirit\b', r'\bage\b', r'\bddd\b',
+        r'\bdomain driven design\b', r'\bsoftware development lifecycle\b', r'\bsdlc\b',
+        r'\bitil\b', r'\bretrospectives\b', r'\bstandups\b', r'\bsprints\b', r'\bfpscrum\b',
         
         # Security
         r'\bsecurity\b', r'\bcryptography\b', r'\bpki\b', r'\bssl\b', r'\bnetworking\b', r'\btcp/ip\b',
         r'\bowasp\b', r'\bpenetration testing\b', r'\bpen testing\b', r'\binfosec\b', r'\bsoc\b',
+        r'\bapplication security\b', r'\bcyber security\b', r'\bvulnerability scanning\b',
+        r'\bburp suite\b', r'\boauth\b', r'\bsso\b', r'\bsaml\b', r'\bcryptography\b',
+        r'\bincident response\b', r'\bthreat modeling\b', r'\bsecurity architecture\b', 
+        r'\bcompliance\b', r'\bgdpr\b', r'\bhipaa\b', r'\bpci dss\b', r'\bsoc 2\b',
+        r'\bencryption\b', r'\bhashing\b', r'\bvpn\b', r'\bfirewalls\b', r'\bids\b', r'\bips\b',
         
         # Embedded
         r'\bembedded\b', r'\bfirmware\b', r'\brtos\b', r'\braspberry pi\b', r'\barduino\b',
-        r'\bmicrocontroller\b', r'\bvhdl\b', r'\bverilog\b', r'\barmc?\b', r'\bdriver\b'
+        r'\bmicrocontroller\b', r'\bvhdl\b', r'\bverilog\b', r'\barm\b', r'\bdriver\b',
+        r'\brealtime systems\b', r'\bfpga\b', r'\bembedded linux\b', r'\brtos\b', r'\bespa\b',
+        r'\bpicot\b', r'\bavr\b', r'\bstm32\b', r'\besp32\b', r'\batmega\b', r'\bdriver development\b',
+        r'\bbare metal\b', r'\biot\b', r'\binternet of things\b', r'\bedge computing\b',
+        
+        # Blockchain & Web3
+        r'\bblockchain\b', r'\bcryptocurrency\b', r'\bsmart contracts\b', r'\bweb3\b',
+        r'\bnft\b', r'\bethereum\b', r'\bsolidity\b', r'\bweb 3\.0\b', r'\bdecentralized\b',
+        r'\bdefi\b', r'\bdao\b', r'\btoken\b', r'\bconsensus\b', r'\bbitcoin\b',
+        
+        # Game Development
+        r'\bgame development\b', r'\bunity\b', r'\bunreal\b', r'\bgame engine\b',
+        r'\bprocedural generation\b', r'\bgame design\b', r'\b3d modeling\b', r'\bgraphics\b',
+        r'\bgame physics\b', r'\bgame ai\b', r'\bdirectx\b', r'\bopengl\b', r'\bvulkan\b',
+        
+        # AR/VR
+        r'\bar\b', r'\bvr\b', r'\baugmented reality\b', r'\bvirtual reality\b', r'\bxr\b',
+        r'\bmixed reality\b', r'\barkit\b', r'\barcore\b', r'\boculus\b', r'\bvive\b',
+        r'\bunity ar\b', r'\bhololens\b', r'\bmetaverse\b'
     ]
     
     found_skills = []
@@ -328,7 +565,42 @@ def extract_skills(text):
             skill = pattern.replace(r'\b', '').replace('\\', '').replace('?', '')
             found_skills.append(skill)
     
-    return found_skills
+    # Clean up duplicate or near-duplicate skills
+    # For example, if both 'react' and 'react.js' are found, keep only 'react'
+    skill_mapping = {
+        'node': 'node.js',
+        'nodejs': 'node.js',
+        'react': 'react',
+        'reactjs': 'react',
+        'angular': 'angular',
+        'angularjs': 'angular',
+        'vue': 'vue.js',
+        'vuejs': 'vue.js',
+        'js': 'javascript',
+        'postgres': 'postgresql',
+        'ml': 'machine learning',
+        'ai': 'artificial intelligence',
+        'cv': 'computer vision',
+        'nlp': 'natural language processing',
+    }
+    
+    # Apply mapping to standardize skill names
+    normalized_skills = []
+    for skill in found_skills:
+        if skill.lower() in skill_mapping:
+            normalized_skills.append(skill_mapping[skill.lower()])
+        else:
+            normalized_skills.append(skill)
+    
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_skills = []
+    for skill in normalized_skills:
+        if skill.lower() not in seen:
+            seen.add(skill.lower())
+            unique_skills.append(skill)
+    
+    return unique_skills
 
 def extract_key_terms(text, term_list):
     """Extract occurrences of key terms from text"""
@@ -569,12 +841,15 @@ def load_and_clean_data(file_path):
         )
         
         # Convert Date Posted to datetime
-        # Convert Date Posted to datetime using our flexible converter
+        # Convert Date Posted to datetime
         df['Date Posted'] = df['Date Posted'].apply(convert_excel_date)
 
-        # Set current date for rows with missing date
+        # Set current date for rows with missing date and ensure datetime type
         current_date = datetime.now()
         df['Date Posted'] = df['Date Posted'].fillna(current_date)
+
+        # Force proper datetime conversion
+        df['Date Posted'] = pd.to_datetime(df['Date Posted'], errors='coerce')
         
         # Create full text field for comprehensive text analysis
         df['Full_Text'] = df.apply(
@@ -719,30 +994,39 @@ def create_dashboard(df):
     else:
         df_filtered = df
     
-    # Time period filter
-    if 'Date Posted' in df.columns:
-        st.sidebar.markdown("### Time Period Filter")
-        min_date = df['Date Posted'].min().date()
-        max_date = df['Date Posted'].max().date()
+    # # Time period filter
+    # if 'Date Posted' in df.columns:
+    #     st.sidebar.markdown("### Time Period Filter")
+    #     min_date = df['Date Posted'].min().date()
+    #     max_date = df['Date Posted'].max().date()
         
-        date_range = st.sidebar.date_input(
-            "Filter by date range",
-            [min_date, max_date],
-            min_value=min_date,
-            max_value=max_date
-        )
+    #     date_range = st.sidebar.date_input(
+    #         "Filter by date range",
+    #         [min_date, max_date],
+    #         min_value=min_date,
+    #         max_value=max_date
+    #     )
         
-        if len(date_range) == 2:
-            start_date, end_date = date_range
-            df_filtered = df_filtered[(df_filtered['Date Posted'].dt.date >= start_date) & 
-                                      (df_filtered['Date Posted'].dt.date <= end_date)]
+    #     if len(date_range) == 2:
+    #         start_date, end_date = date_range
+    #         # Ensure 'Date Posted' is datetime format before filtering
+    #         if 'Date Posted' in df_filtered.columns:
+    #             # Force conversion to datetime
+    #             try:
+    #                 df_filtered['Date Posted'] = pd.to_datetime(df_filtered['Date Posted'], errors='coerce')
+    #                 # Now filter using the datetime column
+    #                 df_filtered = df_filtered[
+    #                     (df_filtered['Date Posted'].dt.date >= start_date) & 
+    #                     (df_filtered['Date Posted'].dt.date <= end_date)
+    #                 ]
+    #             except:
+    #                 st.warning("Issues with date filtering - showing all dates.")
     
     # Create tabs for different analysis views
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "📊 Overview", 
         "🧠 Skills Analysis", 
-        "📂 Job Categories", 
-        "🏢 Company Comparison", 
+        "📂 Job Categories",  
         "💰 Compensation & Benefits",
         "📋 Job Details"
     ])
@@ -757,12 +1041,9 @@ def create_dashboard(df):
         create_job_categories_tab(df_filtered)
     
     with tab4:
-        create_company_comparison_tab(df)
-    
-    with tab5:
         create_compensation_tab(df_filtered)
         
-    with tab6:
+    with tab5:
         create_job_details_tab(df_filtered)
 
 @handle_exceptions
@@ -1497,220 +1778,220 @@ def create_job_categories_tab(df):
     else:
         st.info("No job categories available for analysis")
 
-@handle_exceptions
-def create_company_comparison_tab(df):
-    """Create content for company comparison tab"""
-    st.markdown('<div class="subheader-style">Company Comparison</div>', unsafe_allow_html=True)
+# @handle_exceptions
+# def create_company_comparison_tab(df):
+#     """Create content for company comparison tab"""
+#     st.markdown('<div class="subheader-style">Company Comparison</div>', unsafe_allow_html=True)
     
-    # Check if multiple companies exist in the dataset
-    if 'Company' in df.columns and df['Company'].nunique() > 1:
-        # Select companies to compare
-        all_companies = sorted(df['Company'].unique().tolist())
-        selected_companies = st.multiselect(
-            "Select Companies to Compare", 
-            all_companies,
-            default=all_companies[:min(3, len(all_companies))]
-        )
+#     # Check if multiple companies exist in the dataset
+#     if 'Company' in df.columns and df['Company'].nunique() > 1:
+#         # Select companies to compare
+#         all_companies = sorted(df['Company'].unique().tolist())
+#         selected_companies = st.multiselect(
+#             "Select Companies to Compare", 
+#             all_companies,
+#             default=all_companies[:min(3, len(all_companies))]
+#         )
         
-        if selected_companies:
-            # Filter data for selected companies
-            df_compare = df[df['Company'].isin(selected_companies)]
+#         if selected_companies:
+#             # Filter data for selected companies
+#             df_compare = df[df['Company'].isin(selected_companies)]
             
-            # Categories comparison
-            st.markdown('<div class="subheader-style">Job Categories by Company</div>', unsafe_allow_html=True)
+#             # Categories comparison
+#             st.markdown('<div class="subheader-style">Job Categories by Company</div>', unsafe_allow_html=True)
             
-            # Create a dataframe for category comparison
-            cat_counts = df_compare.groupby(['Company', 'Job_Category']).size().reset_index(name='Count')
+#             # Create a dataframe for category comparison
+#             cat_counts = df_compare.groupby(['Company', 'Job_Category']).size().reset_index(name='Count')
             
-            # Create grouped bar chart
-            fig_cats = px.bar(
-                cat_counts,
-                x='Job_Category',
-                y='Count',
-                color='Company',
-                title="Job Categories Comparison",
-                barmode='group',
-                text='Count'
-            )
-            fig_cats.update_traces(textposition='outside')
-            fig_cats.update_layout(
-                xaxis_title="Job Category", 
-                yaxis_title="Number of Jobs",
-                legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
-            )
-            st.plotly_chart(fig_cats, use_container_width=True)
+#             # Create grouped bar chart
+#             fig_cats = px.bar(
+#                 cat_counts,
+#                 x='Job_Category',
+#                 y='Count',
+#                 color='Company',
+#                 title="Job Categories Comparison",
+#                 barmode='group',
+#                 text='Count'
+#             )
+#             fig_cats.update_traces(textposition='outside')
+#             fig_cats.update_layout(
+#                 xaxis_title="Job Category", 
+#                 yaxis_title="Number of Jobs",
+#                 legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
+#             )
+#             st.plotly_chart(fig_cats, use_container_width=True)
             
-            # Experience requirements comparison
-            st.markdown('<div class="subheader-style">Experience Requirements by Company</div>', unsafe_allow_html=True)
+#             # Experience requirements comparison
+#             st.markdown('<div class="subheader-style">Experience Requirements by Company</div>', unsafe_allow_html=True)
             
-            # Create a dataframe for experience comparison
-            exp_counts = df_compare.groupby(['Company', 'Experience_Range']).size().reset_index(name='Count')
+#             # Create a dataframe for experience comparison
+#             exp_counts = df_compare.groupby(['Company', 'Experience_Range']).size().reset_index(name='Count')
             
-            # Sort by experience level
-            order = [
-                "Entry Level (0-1 years)", 
-                "Junior (1-3 years)", 
-                "Mid-Level (3-5 years)",
-                "Senior (5-8 years)", 
-                "Expert (8+ years)",
-                "Not Specified"
-            ]
-            exp_counts['Experience_Range'] = pd.Categorical(
-                exp_counts['Experience_Range'], 
-                categories=order, 
-                ordered=True
-            )
-            exp_counts = exp_counts.sort_values('Experience_Range')
+#             # Sort by experience level
+#             order = [
+#                 "Entry Level (0-1 years)", 
+#                 "Junior (1-3 years)", 
+#                 "Mid-Level (3-5 years)",
+#                 "Senior (5-8 years)", 
+#                 "Expert (8+ years)",
+#                 "Not Specified"
+#             ]
+#             exp_counts['Experience_Range'] = pd.Categorical(
+#                 exp_counts['Experience_Range'], 
+#                 categories=order, 
+#                 ordered=True
+#             )
+#             exp_counts = exp_counts.sort_values('Experience_Range')
             
-            # Create grouped bar chart
-            fig_exp = px.bar(
-                exp_counts,
-                x='Experience_Range',
-                y='Count',
-                color='Company',
-                title="Experience Requirements Comparison",
-                barmode='group',
-                text='Count'
-            )
-            fig_exp.update_traces(textposition='outside')
-            fig_exp.update_layout(
-                xaxis_title="Experience Level", 
-                yaxis_title="Number of Jobs",
-                xaxis={'categoryorder': 'array', 'categoryarray': order},
-                legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
-            )
-            st.plotly_chart(fig_exp, use_container_width=True)
+#             # Create grouped bar chart
+#             fig_exp = px.bar(
+#                 exp_counts,
+#                 x='Experience_Range',
+#                 y='Count',
+#                 color='Company',
+#                 title="Experience Requirements Comparison",
+#                 barmode='group',
+#                 text='Count'
+#             )
+#             fig_exp.update_traces(textposition='outside')
+#             fig_exp.update_layout(
+#                 xaxis_title="Experience Level", 
+#                 yaxis_title="Number of Jobs",
+#                 xaxis={'categoryorder': 'array', 'categoryarray': order},
+#                 legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
+#             )
+#             st.plotly_chart(fig_exp, use_container_width=True)
             
-            # Work mode comparison
-            st.markdown('<div class="subheader-style">Work Mode by Company</div>', unsafe_allow_html=True)
+#             # Work mode comparison
+#             st.markdown('<div class="subheader-style">Work Mode by Company</div>', unsafe_allow_html=True)
             
-            # Create a dataframe for work mode comparison
-            work_counts = df_compare.groupby(['Company', 'Work_Mode']).size().reset_index(name='Count')
+#             # Create a dataframe for work mode comparison
+#             work_counts = df_compare.groupby(['Company', 'Work_Mode']).size().reset_index(name='Count')
             
-            # Create grouped bar chart
-            fig_work = px.bar(
-                work_counts,
-                x='Work_Mode',
-                y='Count',
-                color='Company',
-                title="Remote vs. Onsite Comparison",
-                barmode='group',
-                text='Count'
-            )
-            fig_work.update_traces(textposition='outside')
-            fig_work.update_layout(
-                xaxis_title="Work Mode", 
-                yaxis_title="Number of Jobs",
-                legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
-            )
-            st.plotly_chart(fig_work, use_container_width=True)
+#             # Create grouped bar chart
+#             fig_work = px.bar(
+#                 work_counts,
+#                 x='Work_Mode',
+#                 y='Count',
+#                 color='Company',
+#                 title="Remote vs. Onsite Comparison",
+#                 barmode='group',
+#                 text='Count'
+#             )
+#             fig_work.update_traces(textposition='outside')
+#             fig_work.update_layout(
+#                 xaxis_title="Work Mode", 
+#                 yaxis_title="Number of Jobs",
+#                 legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
+#             )
+#             st.plotly_chart(fig_work, use_container_width=True)
             
-            # Education requirements comparison
-            st.markdown('<div class="subheader-style">Education Requirements by Company</div>', unsafe_allow_html=True)
+#             # Education requirements comparison
+#             st.markdown('<div class="subheader-style">Education Requirements by Company</div>', unsafe_allow_html=True)
             
-            # Create a dataframe for education comparison
-            edu_counts = df_compare.groupby(['Company', 'Education_Required']).size().reset_index(name='Count')
+#             # Create a dataframe for education comparison
+#             edu_counts = df_compare.groupby(['Company', 'Education_Required']).size().reset_index(name='Count')
             
-            # Create grouped bar chart
-            fig_edu = px.bar(
-                edu_counts,
-                x='Education_Required',
-                y='Count',
-                color='Company',
-                title="Education Requirements Comparison",
-                barmode='group',
-                text='Count'
-            )
-            fig_edu.update_traces(textposition='outside')
-            fig_edu.update_layout(
-                xaxis_title="Education Required", 
-                yaxis_title="Number of Jobs",
-                legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
-            )
-            st.plotly_chart(fig_edu, use_container_width=True)
+#             # Create grouped bar chart
+#             fig_edu = px.bar(
+#                 edu_counts,
+#                 x='Education_Required',
+#                 y='Count',
+#                 color='Company',
+#                 title="Education Requirements Comparison",
+#                 barmode='group',
+#                 text='Count'
+#             )
+#             fig_edu.update_traces(textposition='outside')
+#             fig_edu.update_layout(
+#                 xaxis_title="Education Required", 
+#                 yaxis_title="Number of Jobs",
+#                 legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
+#             )
+#             st.plotly_chart(fig_edu, use_container_width=True)
             
-            # Skills comparison
-            st.markdown('<div class="subheader-style">Top 5 Skills by Company</div>', unsafe_allow_html=True)
+#             # Skills comparison
+#             st.markdown('<div class="subheader-style">Top 5 Skills by Company</div>', unsafe_allow_html=True)
             
-            # Get top 5 skills for each company
-            company_skills = {}
-            for company in selected_companies:
-                df_company = df[df['Company'] == company]
-                skills = [skill for skills_list in df_company['Skills'] for skill in skills_list]
-                top_skills = Counter(skills).most_common(5)
-                company_skills[company] = top_skills
+#             # Get top 5 skills for each company
+#             company_skills = {}
+#             for company in selected_companies:
+#                 df_company = df[df['Company'] == company]
+#                 skills = [skill for skills_list in df_company['Skills'] for skill in skills_list]
+#                 top_skills = Counter(skills).most_common(5)
+#                 company_skills[company] = top_skills
             
-            # Create a table for comparison
-            skills_data = []
-            for company, top_skills in company_skills.items():
-                for i, (skill, count) in enumerate(top_skills):
-                    skills_data.append({
-                        'Company': company,
-                        'Rank': i + 1,
-                        'Skill': skill,
-                        'Count': count
-                    })
+#             # Create a table for comparison
+#             skills_data = []
+#             for company, top_skills in company_skills.items():
+#                 for i, (skill, count) in enumerate(top_skills):
+#                     skills_data.append({
+#                         'Company': company,
+#                         'Rank': i + 1,
+#                         'Skill': skill,
+#                         'Count': count
+#                     })
             
-            skills_df = pd.DataFrame(skills_data)
+#             skills_df = pd.DataFrame(skills_data)
             
-            # Pivot for better visualization
-            skills_pivot = skills_df.pivot(index='Rank', columns='Company', values='Skill')
-            st.dataframe(skills_pivot, use_container_width=True)
+#             # Pivot for better visualization
+#             skills_pivot = skills_df.pivot(index='Rank', columns='Company', values='Skill')
+#             st.dataframe(skills_pivot, use_container_width=True)
             
-            # Heatmap of skills across companies
-            st.markdown('<div class="subheader-style">Skills Distribution Heatmap</div>', unsafe_allow_html=True)
+#             # Heatmap of skills across companies
+#             st.markdown('<div class="subheader-style">Skills Distribution Heatmap</div>', unsafe_allow_html=True)
             
-            # Get common skills across companies
-            all_skills = set()
-            for company in selected_companies:
-                df_company = df[df['Company'] == company]
-                company_skills = set([skill for skills_list in df_company['Skills'] for skill in skills_list])
-                all_skills.update(company_skills)
+#             # Get common skills across companies
+#             all_skills = set()
+#             for company in selected_companies:
+#                 df_company = df[df['Company'] == company]
+#                 company_skills = set([skill for skills_list in df_company['Skills'] for skill in skills_list])
+#                 all_skills.update(company_skills)
             
-            # Create matrix of skill counts by company
-            skill_matrix = []
-            for skill in all_skills:
-                row = {'Skill': skill}
-                for company in selected_companies:
-                    df_company = df[df['Company'] == company]
-                    count = sum(1 for skills_list in df_company['Skills'] if skill in skills_list)
-                    row[company] = count
-                skill_matrix.append(row)
+#             # Create matrix of skill counts by company
+#             skill_matrix = []
+#             for skill in all_skills:
+#                 row = {'Skill': skill}
+#                 for company in selected_companies:
+#                     df_company = df[df['Company'] == company]
+#                     count = sum(1 for skills_list in df_company['Skills'] if skill in skills_list)
+#                     row[company] = count
+#                 skill_matrix.append(row)
             
-            skill_matrix_df = pd.DataFrame(skill_matrix)
+#             skill_matrix_df = pd.DataFrame(skill_matrix)
             
-            # Sort by most common skills
-            skill_matrix_df['Total'] = skill_matrix_df[selected_companies].sum(axis=1)
-            skill_matrix_df = skill_matrix_df.sort_values('Total', ascending=False).head(20)  # Top 20 skills
-            skill_matrix_df = skill_matrix_df.drop(columns=['Total'])
+#             # Sort by most common skills
+#             skill_matrix_df['Total'] = skill_matrix_df[selected_companies].sum(axis=1)
+#             skill_matrix_df = skill_matrix_df.sort_values('Total', ascending=False).head(20)  # Top 20 skills
+#             skill_matrix_df = skill_matrix_df.drop(columns=['Total'])
             
-            # Melt for heatmap format
-            skill_heatmap_df = skill_matrix_df.melt(
-                id_vars=['Skill'], 
-                value_vars=selected_companies,
-                var_name='Company', 
-                value_name='Count'
-            )
+#             # Melt for heatmap format
+#             skill_heatmap_df = skill_matrix_df.melt(
+#                 id_vars=['Skill'], 
+#                 value_vars=selected_companies,
+#                 var_name='Company', 
+#                 value_name='Count'
+#             )
             
-            # Create heatmap
-            fig_heatmap = px.density_heatmap(
-                skill_heatmap_df,
-                x='Company',
-                y='Skill',
-                z='Count',
-                title="Skill Distribution Across Companies",
-                color_continuous_scale='Viridis'
-            )
-            fig_heatmap.update_layout(
-                xaxis_title="Company",
-                yaxis_title="Skill",
-                yaxis={'categoryorder': 'total ascending'}
-            )
-            st.plotly_chart(fig_heatmap, use_container_width=True)
-        else:
-            st.info("Please select at least one company to compare")
-    else:
-        st.info("Multiple company comparison requires data from more than one company")
+#             # Create heatmap
+#             fig_heatmap = px.density_heatmap(
+#                 skill_heatmap_df,
+#                 x='Company',
+#                 y='Skill',
+#                 z='Count',
+#                 title="Skill Distribution Across Companies",
+#                 color_continuous_scale='Viridis'
+#             )
+#             fig_heatmap.update_layout(
+#                 xaxis_title="Company",
+#                 yaxis_title="Skill",
+#                 yaxis={'categoryorder': 'total ascending'}
+#             )
+#             st.plotly_chart(fig_heatmap, use_container_width=True)
+#         else:
+#             st.info("Please select at least one company to compare")
+#     else:
+#         st.info("Multiple company comparison requires data from more than one company")
 
 @handle_exceptions
 def create_compensation_tab(df):
@@ -2132,6 +2413,8 @@ def load_and_clean_data_from_df(df):
         # Set current date for rows with missing date
     current_date = datetime.now()
     df['Date Posted'] = df['Date Posted'].fillna(current_date)
+
+    print(df['Date Posted'].value_counts())
     
     # Create full text field for comprehensive text analysis
     df['Full_Text'] = df.apply(

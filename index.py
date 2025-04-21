@@ -1,19 +1,13 @@
 import streamlit as st
-
-# Set page config must be the first Streamlit command
 st.set_page_config(page_title="Job Market Analysis Hub", layout="wide", initial_sidebar_state="expanded")
-
-# Now import other modules
 import pandas as pd
 import os
-import base64
-from PIL import Image
-import io
+import final  # Import your existing functions
 
-# Import functions from your final.py - import these AFTER st.set_page_config()
-import final 
+# Set page config must be the first Streamlit command
+# st.set_page_config(page_title="Job Market Analysis Hub", layout="wide", initial_sidebar_state="expanded")
 
-# Custom CSS for better tile UI
+# Custom CSS
 st.markdown("""
 <style>
     .company-name {
@@ -54,6 +48,19 @@ st.markdown("""
 # Define the data directory - adjust this to your needs
 DATA_DIR = "data"
 
+def load_company_data(data_path):
+    """Load and process the company data from a CSV file"""
+    try:
+        df = pd.read_csv(data_path)
+        # Add company name to dataframe based on filename
+        company_name = os.path.basename(data_path).split("_")[0].capitalize()
+        df['Company'] = company_name
+        # Process the data
+        return final.load_and_clean_data_from_df(df)
+    except Exception as e:
+        st.error(f"Error loading data for {data_path}: {str(e)}")
+        return None
+
 def display_company_tile(col, company_name, logo_path, job_count):
     """Display company logo, name, job count and view button"""
     with col:
@@ -77,23 +84,15 @@ def display_company_tile(col, company_name, logo_path, job_count):
         
         st.markdown('</div>', unsafe_allow_html=True)
 
-def load_company_data(data_path):
-    """Load and process the company data from a CSV file"""
-    try:
-        df = pd.read_csv(data_path)
-        # Add company name to dataframe based on filename
-        company_name = os.path.basename(data_path).split("_")[0].capitalize()
-        df['Company'] = company_name
-        # Process the data
-        return final.load_and_clean_data_from_df(df)
-    except Exception as e:
-        st.error(f"Error loading data for {data_path}: {str(e)}")
-        return None
-
+# Main function
 def main():
     # Initialize session state for storing selected company
     if 'selected_company' not in st.session_state:
         st.session_state.selected_company = None
+    
+    # Main page description
+    st.markdown('<div class="header-style">Job Market Analysis Hub</div>', unsafe_allow_html=True)
+    st.write("Explore job market data by company or navigate to the Trends and Predictions pages")
     
     # If a company is selected, show the dashboard for that company
     if st.session_state.selected_company:
@@ -120,12 +119,8 @@ def main():
                 st.error(f"Could not load data for {company_name}")
         else:
             st.error(f"No data file found for {company_name}")
-            
     else:
         # Show the company selection page
-        st.markdown('<div class="header-style">Job Market Analysis Hub</div>', unsafe_allow_html=True)
-        st.write("Select a company to view detailed job analytics")
-        
         # Get available companies from the data directory
         companies = []
         if os.path.exists(DATA_DIR):
@@ -169,12 +164,18 @@ def main():
             │   ├── amazon_logo.png
             │   └── ...
             ├── final.py
-            └── index.py
+            ├── index.py
+            └── pages/
+                ├── 1_Trends.py
+                └── 2_Predictions.py
             ```
             
             Your CSV files should contain the columns used in your dashboard.
             """)
         else:
+            # Navigation instructions
+            st.info("👈 Use the sidebar to navigate between Company Analysis, Market Trends, and Future Predictions")
+            
             # Create a container for better centering
             with st.container():
                 st.markdown('<div class="main-content">', unsafe_allow_html=True)
